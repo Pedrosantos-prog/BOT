@@ -1,0 +1,80 @@
+ const urlResolverQuery = gql`
+    query ($url: String!) {
+      urlResolver(url: $url) {
+        type
+        relative_url
+      }
+    }
+  `;
+
+      const productQuery = gql`
+      query ($urlKey: String!) {
+        products(filter: { url_key: { eq: $urlKey } }) {
+          items {
+            name
+            sku
+            url_key
+            stock_status
+          }
+        }
+      }
+    `;
+
+
+const endpoint = 'https://www.runningland.com.br/graphql';
+
+async function checarCarrinhoPorUrl(slug) {
+  // Etapa 1: descobrir tipo da URL
+  const urlResolverQuery = gql`
+    query ($url: String!) {
+      urlResolver(url: $url) {
+        type
+        relative_url
+      }
+    }
+  `;
+  
+  try {
+      const urlData = await request(endpoint, urlResolverQuery, { url: slug });
+      
+      const resolved = urlData?.urlResolver;
+      console.log(resolved)
+
+    if (!resolved || resolved.type !== "PRODUCT") {
+      console.log(`❌ A URL "${slug}" não é de um produto.`);
+      return;
+    }
+
+    const urlKey = resolved.relative_url.replace("/", "");
+
+    // Etapa 2: buscar produto pelo url_key
+    const productQuery = gql`
+      query ($urlKey: String!) {
+        products(filter: { url_key: { eq: $urlKey } }) {
+          items {
+            name
+            sku
+            url_key
+            stock_status
+          }
+        }
+      }
+    `;
+
+    const productData = await request(endpoint, productQuery, { urlKey });
+
+    const produto = productData.products.items[0];
+
+    if (!produto) {
+      console.log(`❌ Produto com URL "${urlKey}" não encontrado.`);
+      return;
+    }
+
+    console.log("🏃 Nome do produto:", produto.name);
+    console.log("🧾 SKU:", produto.sku);
+    console.log("📦 Estoque:", produto.stock_status === "IN_STOCK" ? "✅ Disponível" : "❌ Indisponível");
+    console.log("🔗 Link:", `https://www.runningland.com.br/${produto.url_key}`);
+  } catch (error) {
+    console.error("❌ Erro na requisição:", error.response?.errors || error);
+  }
+}
