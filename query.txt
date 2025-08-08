@@ -1,0 +1,11 @@
+SELECT 
+REPLACE(ur.request_path,'calendario/','') as "URL",
+ur.entity_type 
+FROM `url_rewrite` as ur
+LEFT JOIN catalog_url_rewrite_product_category AS curpc ON ur.url_rewrite_id = curpc.url_rewrite_id
+LEFT JOIN catalog_product_entity as cpe ON curpc.product_id = cpe.entity_id 
+LEFT JOIN catalog_product_entity_varchar as cpev1 ON cpe.entity_id = cpev1.entity_id 
+LEFT JOIN catalog_product_entity_varchar as cpev2 ON cpev2.entity_id = cpev1.value
+WHERE entity_type = "product" 
+AND cpev1.attribute_id = 321
+AND cpev2.attribute_id = 73;
