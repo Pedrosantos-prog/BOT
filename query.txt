@@ -9,3 +9,28 @@ LEFT JOIN catalog_product_entity_varchar as cpev2 ON cpev2.entity_id = cpev1.val
 WHERE entity_type = "product" 
 AND cpev1.attribute_id = 321
 AND cpev2.attribute_id = 73;
+
+
+  query Products($urlKey: String!) {
+    products(filter: { url_key: { eq: $urlKey } }) {
+      total_count
+      items {
+        __typename
+        ... on SimpleProduct {
+          id
+          name
+          sku
+          url_key
+          stock_status
+          stock_info{
+            qty
+          }
+          related_products{
+            items {
+              sku
+            }
+          }
+        }
+      }
+    }
+  }
