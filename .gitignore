@@ -3,3 +3,5 @@ node_modules
 .package-lock.json
 .querys.txt
 .gitignore
+.alerta_estoque.xlsx
+.alertas_estoque.json

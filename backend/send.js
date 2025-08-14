@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import salvarExcelAlertas from './alertExcel.js'
 dotenv.config();
 
 const transporter = nodemailer.createTransport({
@@ -12,13 +13,23 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-async function enviarEmail(destinatario,assunto,corpo) {
+async function enviarEmail(destinatario,assunto,corpo,nomeArquivo, alertas) {
     try{
+
+        await salvarExcelAlertas(nomeArquivo,alertas)
+
          const info = await transporter.sendMail({
             from: '"Pedro - Norte MKT" <pedro.santos@nortemkt.com>', // Melhor identificação
             to: destinatario,
             subject: assunto,
-            text: corpo
+            text: corpo,
+            attachments: [
+                {
+                    filename: nomeArquivo,      // Nome do arquivo no e-mail
+                    path: `./${nomeArquivo}`,   // Caminho do arquivo no servidor
+                    contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+                }
+            ]
         });
         return info;    
     }catch(err){
@@ -27,3 +38,4 @@ async function enviarEmail(destinatario,assunto,corpo) {
 }
 
 export default enviarEmail;
+

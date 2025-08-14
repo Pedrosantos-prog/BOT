@@ -1,16 +1,18 @@
 import { request, gql } from "graphql-request";
-import pool from './database.js'
+import pool from "./database.js";
 import QUERY_BD from "./queryBD.js";
-import fs from 'fs/promises';
-import enviarEmail from './send.js'
-
+import fs from "fs/promises";
+import enviarEmail from "./send.js";
+import salvarExcelAlertas from './alertExcel.js'
 
 // ==== CONFIG ====
 const endpoint = "https://runningland.com.br/graphql";
 const INPUT_FILE = "url.json";
-const LIMITE = 10
+const LIMITE = 10;
+const LIMITE_ESTOQUE = 50; // Limite para disparar alerta
 
-const MESSAGE = []
+const MESSAGE = [];
+const ALERTAS = []; // Array para armazenar alertas de estoque baixo
 
 const Products = gql`
   query Products($urlKey: String!) {
@@ -28,6 +30,7 @@ const Products = gql`
             id
             name
             sku
+            stock_status
 
             # Para produtos Bundle (que contêm outros produtos)
             ... on BundleProduct {
@@ -40,9 +43,6 @@ const Products = gql`
                   product {
                     name
                     sku
-                    stock_info {
-                      qty
-                    }
                   }
                 }
               }
@@ -55,68 +55,133 @@ const Products = gql`
 `;
 
 async function getURL() {
-  try{
-    const [rows] = await pool.query(QUERY_BD.query_URL)
-    await saveJSON(rows)
+  try {
+    const [rows] = await pool.query(QUERY_BD.query_URL);
+    await saveJSON(rows);
     return rows;
-  } catch(err){
+  } catch (err) {
     throw new Error("Error ao consultar dados do banco de dados!");
   }
 }
 
 async function saveJSON(rows) {
-  try{
-    const data = await fs.writeFile('url.json',JSON.stringify(rows,null,2),'utf-8')
-    console.log('Arquivo salvo!')
-    return data
-  } catch(err){
+  try {
+    const data = await fs.writeFile(
+      "url.json",
+      JSON.stringify(rows, null, 2),
+      "utf-8"
+    );
+    console.log("Arquivo salvo!");
+    return data;
+  } catch (err) {
     throw new Error("Error ao salvar query no json!");
   }
 }
 
 async function readURL(path) {
-  try{
-   const data = await fs.readFile(path,'utf-8')
-   const response = JSON.parse(data)
-   const list = response.map(e=>e.URL) 
-   return list
-  } catch(e){
+  try {
+    const data = await fs.readFile(path, "utf-8");
+    const response = JSON.parse(data);
+    const list = response.map((e) => e.URL);
+    return list;
+  } catch (e) {
     throw new Error("Não foi possivel ler arquivo json");
   }
 }
 
-
 async function deleteJSON(path) {
-  try{
+  try {
     const data = await fs.unlink(path);
-    console.log('Arquivo excluido')
-    return data
-  } catch(err){
+    console.log("Arquivo excluido");
+    return data;
+  } catch (err) {
     throw new Error("Error ao deletar json!");
   }
+}
+
+// Função para processar alertas de estoque
+ function processarAlertas(produto, nomeEvento) {
+  const alertasProduto = [];
+
+  // Verifica produtos relacionados (onde está o quantity)
+  if (produto.related_products) {
+    produto.related_products.forEach((produtoRelacionado) => {
+      // Verifica items do bundle se existir
+      if (produtoRelacionado.items) {
+        produtoRelacionado.items.forEach((item) => {
+          if (item.options) {
+            item.options.forEach((option) => {
+              const quantidade = option.quantity || 0;
+              if (quantidade <= LIMITE_ESTOQUE) {
+                if (item.title && item.title.toLowerCase().includes("bateria")) return; // Pula este item na exibição} 
+                if(item.title && item.title.toLowerCase().includes("distância")) return;
+                if(item.title && item.title.toLowerCase().includes("termo")) return;
+                if(item.title && item.title.toLowerCase().includes("aceite")) return;
+                if(item.title && item.title.toLowerCase().includes("jaqueta")) return;
+                if(item.title && item.title.toLowerCase().includes("boné")) return;
+                if(item.title && item.title.toLowerCase().includes("moletom")) return;
+
+
+                alertasProduto.push({
+                  nome: `${produtoRelacionado.name} - ${item.title} - ${option.label}`,
+                  sku: produtoRelacionado.sku,
+                  estoque: quantidade,
+                  tipo: "bundle_option",
+                  produto_id: produtoRelacionado.id,
+                });
+              }
+            });
+          }
+        });
+      }
+    });
+  }
+
+  // Se houver alertas, adiciona ao array global
+  if (alertasProduto.length > 0) {
+    ALERTAS.push({
+      evento: nomeEvento,
+      url_key: produto.url_key,
+      alertas: alertasProduto,
+      timestamp: new Date().toISOString(),
+    });
+  }
+
+  return alertasProduto.length > 0;
 }
 
 async function searchData(urlKey) {
   try {
     const data = await request(endpoint, Products, { urlKey });
-    
+
+    const produto = data.products.items[0];
+
+    if (!produto) {
+      console.log(`❌ Produto não encontrado: ${urlKey}`);
+      return null;
+    }
+
+    // Verifica alertas de estoque
+    const temAlertas = processarAlertas(produto, produto.name);
+
     // Gera a mensagem formatada
-    const message = formatEventMessage(data);
+    const message = formatEventMessage(data, temAlertas);
     console.log("\n" + "=".repeat(60));
-    console.log(`EVENTO: ${urlKey}`);
+    console.log(`EVENTO: ${urlKey} ${temAlertas ? "🚨 ALERTA ESTOQUE" : "✅"}`);
     console.log("=".repeat(60));
     console.log(message);
-    
-    // Adiciona ao array MESSAGE com estrutura melhorada
+
+    // Adiciona ao array MESSAGE
     MESSAGE.push({
       url_key: urlKey,
-      evento: data.products.items[0]?.name || 'Nome não encontrado',
-      status: data.products.items[0]?.stock_status || 'Status desconhecido',
+      evento: produto.name,
+      status: produto.stock_status,
       timestamp: new Date().toISOString(),
-      produtos: data.products.items[0]?.related_products || [],
-      mensagem_formatada: message
+      produtos: produto.related_products || [],
+      mensagem_formatada: message,
+      tem_alertas: temAlertas,
     });
-    
+
     return data;
   } catch (err) {
     console.error(`❌ Erro ao processar ${urlKey}:`, err.message);
@@ -124,10 +189,10 @@ async function searchData(urlKey) {
   }
 }
 
-function formatEventMessage(dataProduct) {
+function formatEventMessage(dataProduct, temAlertas = false) {
   try {
     const product = dataProduct.products.items[0];
-    
+
     if (!product) {
       return "❌ Produto não encontrado";
     }
@@ -137,56 +202,115 @@ function formatEventMessage(dataProduct) {
     const eventSku = product.sku;
     const stockStatus = product.stock_status;
 
-    let message = `🏃‍♂️ **${eventName}**\n`;
+    let message = `🏃‍♂️ **${eventName}** ${temAlertas ? "🚨" : ""}\n`;
     message += `📦 SKU: ${eventSku}\n`;
     message += `📊 Status: ${stockStatus}\n`;
     message += `${"=".repeat(40)}\n\n`;
-
-    // Processa produtos relacionados (Bundle products)
+    // Processa produtos relacionados
     if (product.related_products && product.related_products.length > 0) {
-      message += `📋 **PRODUTOS DO EVENTO:**\n\n`;
-
-      product.related_products.forEach((relatedProduct, index) => {
-        message += `${index + 1}. **${relatedProduct.name}**\n`;
-        message += `   📦 SKU: ${relatedProduct.sku}\n`;
-        message += `   🆔 ID: ${relatedProduct.id}\n`;
-
-        // Se for um Bundle Product com items
-        if (relatedProduct.items && relatedProduct.items.length > 0) {
+      message += `📋 **PRODUTOS RELACIONADOS:**\n\n`;
+      product.related_products.forEach((element, index) => {
+        message += `${index + 1}. **${element.name}**\n`;
+        message += `   📦 SKU: ${element.sku}\n`;
+        message += `   🆔 ID: ${element.id}\n`;
+        // Se for Bundle Product com opções
+        if (element.items && element.items.length > 0) {
           message += `   📏 **Modalidades:**\n`;
-          
-          relatedProduct.items.forEach(item => {
+
+          element.items.forEach((item) => {
+            // Ignora completamente itens relacionados a bateria
+            if (item.title && item.title.toLowerCase().includes("bateria")) {
+              return; // Pula este item na exibição
+            }
             message += `   \n   🏷️  **${item.title}**\n`;
-            
             if (item.options && item.options.length > 0) {
               let totalQuantity = 0;
-              
-              item.options.forEach(option => {
+              item.options.forEach((option) => {
                 const quantity = option.quantity || 0;
-                if(quantity<=50){
-                  message += `      • ${option.label}: ${quantity} unidades [VERMELHO]\n`;
-                }
-                else{
-                  message += `      • ${option.label}: ${quantity} unidades\n`;
-                }
+                const alert = quantity <= LIMITE_ESTOQUE ? " 🚨" : "";
+                message += `      • ${option.label}: ${quantity} unidades${alert}\n`;
                 totalQuantity += quantity;
-                
               });
-              
-              message += `      📦 Total em estoque: ${totalQuantity} unidades\n`;
+              const alertTotal = totalQuantity <= LIMITE_ESTOQUE ? " 🚨" : "";
+              message += `      📦 Total: ${totalQuantity} unidades${alertTotal}\n`;
             }
           });
         }
-
         message += `\n`;
       });
     }
 
     return message;
-
   } catch (error) {
     console.error("Erro ao formatar mensagem:", error);
     return `❌ Erro ao processar dados: ${error.message}`;
+  }
+}
+
+// Função para gerar relatório de alertas
+function gerarRelatorioAlertas() {
+  if (ALERTAS.length === 0) {
+    return null;
+  }
+
+  let relatorio = `🚨 RELATÓRIO DE ALERTAS DE ESTOQUE\n`;
+  relatorio += `📅 Data: ${new Date().toLocaleString("pt-BR")}\n`;
+  relatorio += `📊 Total de eventos com alertas: ${ALERTAS.length}\n`;
+  relatorio += `${"=".repeat(50)}\n\n`;
+
+  ALERTAS.forEach((evento, index) => {
+    relatorio += `${index + 1}. 🏃‍♂️ ${evento.evento}\n`;
+    relatorio += `   🔗 URL Key: ${evento.url_key}\n`;
+    relatorio += `   ⚠️  Alertas encontrados:\n`;
+
+    evento.alertas.forEach((alerta) => {
+      relatorio += `      • ${alerta.nome}\n`;
+      relatorio += `        SKU: ${alerta.sku} | Estoque: ${alerta.estoque} unidades\n`;
+       relatorio += `\n`;
+    });
+    relatorio += `\n`;
+  });
+
+  return relatorio;
+}
+
+// Função para enviar email de alerta
+async function enviarEmailAlerta() {
+  if (ALERTAS.length === 0) {
+    console.log("✅ Nenhum alerta de estoque encontrado");
+    return;
+  }
+
+  try {
+    const relatorio = gerarRelatorioAlertas();
+    const assunto = `🚨 Alerta de Estoque Baixo - ${ALERTAS.length} evento(s)`;
+
+    // Usando a estrutura correta da sua função enviarEmail
+    const destinatarios = ['alexandre.braga@nortemkt.com','otavio.michelato@nortemkt.com','cesar.vital@nortemkt.com']
+    for(let i=0;i<destinatarios.length;i++){
+      await enviarEmail(destinatarios[i],assunto,relatorio,'alerta_estoque.xlsx',ALERTAS)
+    }
+    
+    console.log(
+      `📧 Email de alerta enviado! ${ALERTAS.length} evento(s) com estoque baixo`
+    );
+
+    // Salva log dos alertas
+    await fs.writeFile(
+      "alertas_estoque.json",
+      JSON.stringify(
+        {
+          timestamp: new Date().toISOString(),
+          total_alertas: ALERTAS.length,
+          alertas: ALERTAS,
+        },
+        null,
+        2
+      ),
+      "utf-8"
+    );
+  } catch (error) {
+    console.error("❌ Erro ao enviar email de alerta:", error.message);
   }
 }
 
@@ -195,46 +319,76 @@ async function saveMessages() {
     const messagesData = {
       timestamp: new Date().toISOString(),
       total_eventos: MESSAGE.length,
-      eventos: MESSAGE
+      eventos_com_alertas: MESSAGE.filter((m) => m.tem_alertas).length,
+      eventos: MESSAGE,
     };
-    
-    await fs.writeFile('messages.json', JSON.stringify(messagesData, null, 2), 'utf-8');
-    console.log('📄 Mensagens salvas em messages.json');
+
+    await fs.writeFile(
+      "messages.json",
+      JSON.stringify(messagesData, null, 2),
+      "utf-8"
+    );
+    console.log("📄 Mensagens salvas em messages.json");
   } catch (error) {
-    console.error('❌ Erro ao salvar mensagens:', error.message);
+    console.error("❌ Erro ao salvar mensagens:", error.message);
   }
 }
-async function concurrency(list,limit) {
-    let index = 0; // indice atual na lista
-    const results = []
-    const errors = []
 
-    async function worker() {
-      while(true){
-        let currentIndex;
-        if(index>=list.length) break;
-        currentIndex = index++ // pega o proximo index e incrementa
-        if(currentIndex >= list.length) break;
-        const urlkey = list[currentIndex]
+async function concurrency(list, limit) {
+  let index = 0;
+  const results = [];
+  const errors = [];
 
-        try{
-          const result = await searchData(urlkey)
-          results.push({urlkey, data: result})
-        } catch(err){
-          errors.push({urlkey, error: err.message});
+  async function worker() {
+    while (true) {
+      let currentIndex;
+      if (index >= list.length) break;
+      currentIndex = index++;
+      if (currentIndex >= list.length) break;
+      const urlkey = list[currentIndex];
+
+      try {
+        const result = await searchData(urlkey);
+        if (result) {
+          results.push({ urlkey, data: result });
         }
+      } catch (err) {
+        errors.push({ urlkey, error: err.message });
       }
     }
+  }
 
-    const workers = Array.from({length:limit},()=> worker());
-    await Promise.all(workers)
-    return {results, errors}
+  const workers = Array.from({ length: limit }, () => worker());
+  await Promise.all(workers);
+  return { results, errors };
 }
 
+// ==== EXECUÇÃO PRINCIPAL ====
+try {
+  console.log("🚀 Iniciando monitoramento de estoque...");
+
+  await getURL();
+  const list = await readURL(INPUT_FILE);
+  const { results, errors } = await concurrency(list, LIMITE);
 
 
-await getURL()
-const list = await readURL(INPUT_FILE)  
-const {results}= await concurrency(list,LIMITE)
-await deleteJSON(INPUT_FILE)
+  // Envia email apenas se houver alertas
+  await enviarEmailAlerta();
 
+  // Limpa arquivo temporário
+  await deleteJSON(INPUT_FILE);
+
+  // Resumo final
+  console.log("\n" + "=".repeat(60));
+  console.log("📊 RESUMO DA EXECUÇÃO");
+  console.log("=".repeat(60));
+  console.log(`✅ Produtos processados: ${results.length}`);
+  console.log(`❌ Erros encontrados: ${errors.length}`);
+  console.log(`🚨 Eventos com alertas: ${ALERTAS.length}`);
+  console.log(`📧 Email enviado: ${ALERTAS.length > 0 ? "SIM" : "NÃO"}`);
+  console.log("=".repeat(60));
+
+  
+} catch (error) {
+  console.error("❌ Erro na execução principal:", error.message);
+}
