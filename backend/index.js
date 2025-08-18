@@ -3,7 +3,8 @@ import pool from "./database.js";
 import QUERY_BD from "./queryBD.js";
 import fs from "fs/promises";
 import enviarEmail from "./send.js";
-import salvarExcelAlertas from './alertExcel.js'
+import salvarExcelAlertas from "./alertExcel.js";
+import cron from "node-cron";
 
 // ==== CONFIG ====
 const endpoint = "https://runningland.com.br/graphql";
@@ -100,7 +101,7 @@ async function deleteJSON(path) {
 }
 
 // Função para processar alertas de estoque
- function processarAlertas(produto, nomeEvento) {
+function processarAlertas(produto, nomeEvento) {
   const alertasProduto = [];
 
   // Verifica produtos relacionados (onde está o quantity)
@@ -113,14 +114,23 @@ async function deleteJSON(path) {
             item.options.forEach((option) => {
               const quantidade = option.quantity || 0;
               if (quantidade <= LIMITE_ESTOQUE) {
-                if (item.title && item.title.toLowerCase().includes("bateria")) return; // Pula este item na exibição} 
-                if(item.title && item.title.toLowerCase().includes("distância")) return;
-                if(item.title && item.title.toLowerCase().includes("termo")) return;
-                if(item.title && item.title.toLowerCase().includes("aceite")) return;
-                if(item.title && item.title.toLowerCase().includes("jaqueta")) return;
-                if(item.title && item.title.toLowerCase().includes("boné")) return;
-                if(item.title && item.title.toLowerCase().includes("moletom")) return;
-
+                if (item.title && item.title.toLowerCase().includes("bateria"))
+                  return; // Pula este item na exibição}
+                if (
+                  item.title &&
+                  item.title.toLowerCase().includes("distância")
+                )
+                  return;
+                if (item.title && item.title.toLowerCase().includes("termo"))
+                  return;
+                if (item.title && item.title.toLowerCase().includes("aceite"))
+                  return;
+                if (item.title && item.title.toLowerCase().includes("jaqueta"))
+                  return;
+                if (item.title && item.title.toLowerCase().includes("boné"))
+                  return;
+                if (item.title && item.title.toLowerCase().includes("moletom"))
+                  return;
 
                 alertasProduto.push({
                   nome: `${produtoRelacionado.name} - ${item.title} - ${option.label}`,
@@ -266,7 +276,7 @@ function gerarRelatorioAlertas() {
     evento.alertas.forEach((alerta) => {
       relatorio += `      • ${alerta.nome}\n`;
       relatorio += `        SKU: ${alerta.sku} | Estoque: ${alerta.estoque} unidades\n`;
-       relatorio += `\n`;
+      relatorio += `\n`;
     });
     relatorio += `\n`;
   });
@@ -286,11 +296,21 @@ async function enviarEmailAlerta() {
     const assunto = `🚨 Alerta de Estoque Baixo - ${ALERTAS.length} evento(s)`;
 
     // Usando a estrutura correta da sua função enviarEmail
-    const destinatarios = ['alexandre.braga@nortemkt.com','otavio.michelato@nortemkt.com','cesar.vital@nortemkt.com']
-    for(let i=0;i<destinatarios.length;i++){
-      await enviarEmail(destinatarios[i],assunto,relatorio,'alerta_estoque.xlsx',ALERTAS)
+    const destinatarios = [
+      "alexandre.braga@nortemkt.com",
+      "otavio.michelato@nortemkt.com",
+      "cesar.vital@nortemkt.com",
+    ];
+    for (let i = 0; i < destinatarios.length; i++) {
+      await enviarEmail(
+        destinatarios[i],
+        assunto,
+        relatorio,
+        "alerta_estoque.xlsx",
+        ALERTAS
+      );
     }
-    
+
     console.log(
       `📧 Email de alerta enviado! ${ALERTAS.length} evento(s) com estoque baixo`
     );
@@ -364,31 +384,38 @@ async function concurrency(list, limit) {
 }
 
 // ==== EXECUÇÃO PRINCIPAL ====
-try {
-  console.log("🚀 Iniciando monitoramento de estoque...");
 
-  await getURL();
-  const list = await readURL(INPUT_FILE);
-  const { results, errors } = await concurrency(list, LIMITE);
+async function Monitoramento() {
+  try {
+    console.log("🚀 Iniciando monitoramento de estoque...");
 
+    await getURL();
+    const list = await readURL(INPUT_FILE);
+    const { results, errors } = await concurrency(list, LIMITE);
 
-  // Envia email apenas se houver alertas
-  await enviarEmailAlerta();
+    // Envia email apenas se houver alertas
+    await enviarEmailAlerta();
+    await salvarExcelAlertas("alertas_estoque.json", ALERTAS);
+    // Limpa arquivo temporário
+    await deleteJSON(INPUT_FILE);
 
-  // Limpa arquivo temporário
-  await deleteJSON(INPUT_FILE);
-
-  // Resumo final
-  console.log("\n" + "=".repeat(60));
-  console.log("📊 RESUMO DA EXECUÇÃO");
-  console.log("=".repeat(60));
-  console.log(`✅ Produtos processados: ${results.length}`);
-  console.log(`❌ Erros encontrados: ${errors.length}`);
-  console.log(`🚨 Eventos com alertas: ${ALERTAS.length}`);
-  console.log(`📧 Email enviado: ${ALERTAS.length > 0 ? "SIM" : "NÃO"}`);
-  console.log("=".repeat(60));
-
-  
-} catch (error) {
-  console.error("❌ Erro na execução principal:", error.message);
+    // Resumo final
+    console.log("\n" + "=".repeat(60));
+    console.log("📊 RESUMO DA EXECUÇÃO");
+    console.log("=".repeat(60));
+    console.log(`✅ Produtos processados: ${results.length}`);
+    console.log(`❌ Erros encontrados: ${errors.length}`);
+    console.log(`🚨 Eventos com alertas: ${ALERTAS.length}`);
+    console.log(`📧 Email enviado: ${ALERTAS.length > 0 ? "SIM" : "NÃO"}`);
+    console.log("=".repeat(60));
+    return;
+  } catch (error) {
+    console.error("❌ Erro na execução principal:", error.message);
+    return error;
+  }
 }
+
+
+cron.schedule('0 8-20/2 * * 1-5',async ()=>{
+  await Monitoramento()
+} )
