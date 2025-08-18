@@ -5,6 +5,7 @@ import fs from "fs/promises";
 import enviarEmail from "./send.js";
 import salvarExcelAlertas from "./alertExcel.js";
 import cron from "node-cron";
+import { title } from "process";
 
 // ==== CONFIG ====
 const endpoint = "https://runningland.com.br/graphql";
@@ -107,6 +108,13 @@ function processarAlertas(produto, nomeEvento) {
   // Verifica produtos relacionados (onde está o quantity)
   if (produto.related_products) {
     produto.related_products.forEach((produtoRelacionado) => {
+      if (
+        produtoRelacionado.name &&
+        produtoRelacionado.name.toLowerCase().includes("patrocinador")
+      ) {
+        return; // Pula todo o produto relacionado se for patrocinador
+      }
+
       // Verifica items do bundle se existir
       if (produtoRelacionado.items) {
         produtoRelacionado.items.forEach((item) => {
@@ -133,7 +141,9 @@ function processarAlertas(produto, nomeEvento) {
                   return;
 
                 alertasProduto.push({
-                  nome: `${produtoRelacionado.name} - ${item.title} - ${option.label}`,
+                  nome: `${produtoRelacionado.name}`,
+                  title: `${item.title}`,
+                  label: `${option.label}`,
                   sku: produtoRelacionado.sku,
                   estoque: quantidade,
                   tipo: "bundle_option",
@@ -209,44 +219,59 @@ function formatEventMessage(dataProduct, temAlertas = false) {
 
     // Informações básicas do evento
     const eventName = product.name;
-    const eventSku = product.sku;
-    const stockStatus = product.stock_status;
+    let message = `🏃‍♂️ **${eventName}** ${temAlertas ? "🚨" : ""}\n\n`;
 
-    let message = `🏃‍♂️ **${eventName}** ${temAlertas ? "🚨" : ""}\n`;
-    message += `📦 SKU: ${eventSku}\n`;
-    message += `📊 Status: ${stockStatus}\n`;
-    message += `${"=".repeat(40)}\n\n`;
     // Processa produtos relacionados
     if (product.related_products && product.related_products.length > 0) {
-      message += `📋 **PRODUTOS RELACIONADOS:**\n\n`;
-      product.related_products.forEach((element, index) => {
-        message += `${index + 1}. **${element.name}**\n`;
-        message += `   📦 SKU: ${element.sku}\n`;
-        message += `   🆔 ID: ${element.id}\n`;
+      let kitIndex = 1;
+
+      product.related_products.forEach((element) => {
+        // FILTRO: Ignora produtos patrocinadores pelo nome do produto relacionado
+        if (
+          element.name &&
+          element.name.toLowerCase().includes("patrocinador")
+        ) {
+          return; // Pula todo o produto relacionado se for patrocinador
+        }
+
         // Se for Bundle Product com opções
         if (element.items && element.items.length > 0) {
-          message += `   📏 **Modalidades:**\n`;
-
           element.items.forEach((item) => {
             // Ignora completamente itens relacionados a bateria
             if (item.title && item.title.toLowerCase().includes("bateria")) {
               return; // Pula este item na exibição
             }
-            message += `   \n   🏷️  **${item.title}**\n`;
+            if (item.title && item.title.toLowerCase().includes("distância")) {
+              return;
+            }
+            if (item.title && item.title.toLowerCase().includes("termo")) {
+              return;
+            }
+            if (item.title && item.title.toLowerCase().includes("aceite")) {
+              return;
+            }
+            if (item.title && item.title.toLowerCase().includes("jaqueta")) {
+              return;
+            }
+            if (item.title && item.title.toLowerCase().includes("boné")) {
+              return;
+            }
+            if (item.title && item.title.toLowerCase().includes("moletom")) {
+              return;
+            }
+
+            message += `    ${item.title}\n`;
+
             if (item.options && item.options.length > 0) {
-              let totalQuantity = 0;
               item.options.forEach((option) => {
                 const quantity = option.quantity || 0;
                 const alert = quantity <= LIMITE_ESTOQUE ? " 🚨" : "";
-                message += `      • ${option.label}: ${quantity} unidades${alert}\n`;
-                totalQuantity += quantity;
+                message += `    ${option.label}: ${quantity}${alert}\n`;
               });
-              const alertTotal = totalQuantity <= LIMITE_ESTOQUE ? " 🚨" : "";
-              message += `      📦 Total: ${totalQuantity} unidades${alertTotal}\n`;
             }
+            message += `\n`;
           });
         }
-        message += `\n`;
       });
     }
 
@@ -256,7 +281,6 @@ function formatEventMessage(dataProduct, temAlertas = false) {
     return `❌ Erro ao processar dados: ${error.message}`;
   }
 }
-
 // Função para gerar relatório de alertas
 function gerarRelatorioAlertas() {
   if (ALERTAS.length === 0) {
@@ -270,12 +294,11 @@ function gerarRelatorioAlertas() {
 
   ALERTAS.forEach((evento, index) => {
     relatorio += `${index + 1}. 🏃‍♂️ ${evento.evento}\n`;
-    relatorio += `   🔗 URL Key: ${evento.url_key}\n`;
     relatorio += `   ⚠️  Alertas encontrados:\n`;
 
     evento.alertas.forEach((alerta) => {
       relatorio += `      • ${alerta.nome}\n`;
-      relatorio += `        SKU: ${alerta.sku} | Estoque: ${alerta.estoque} unidades\n`;
+      relatorio += `        ${alerta.label} | Estoque: ${alerta.estoque} unidades\n`;
       relatorio += `\n`;
     });
     relatorio += `\n`;
@@ -301,15 +324,15 @@ async function enviarEmailAlerta() {
       "otavio.michelato@nortemkt.com",
       "cesar.vital@nortemkt.com",
     ];
-    for (let i = 0; i < destinatarios.length; i++) {
-      await enviarEmail(
-        destinatarios[i],
-        assunto,
-        relatorio,
-        "alerta_estoque.xlsx",
-        ALERTAS
-      );
-    }
+    // const destinatarios = ["julia.correa@nortemkt.com"];
+
+    await enviarEmail(
+      destinatarios,
+      assunto,
+      relatorio,
+      "alerta_estoque.xlsx",
+      ALERTAS
+    );
 
     console.log(
       `📧 Email de alerta enviado! ${ALERTAS.length} evento(s) com estoque baixo`
@@ -388,17 +411,17 @@ async function concurrency(list, limit) {
 async function Monitoramento() {
   try {
     console.log("🚀 Iniciando monitoramento de estoque...");
-
     await getURL();
     const list = await readURL(INPUT_FILE);
     const { results, errors } = await concurrency(list, LIMITE);
-
     // Envia email apenas se houver alertas
+    // Gera a planilha 1x (se houver alertas)
+    if (ALERTAS.length > 0) {
+      await salvarExcelAlertas("alerta_estoque.xlsx", ALERTAS);
+    }
     await enviarEmailAlerta();
-    await salvarExcelAlertas("alertas_estoque.json", ALERTAS);
     // Limpa arquivo temporário
     await deleteJSON(INPUT_FILE);
-
     // Resumo final
     console.log("\n" + "=".repeat(60));
     console.log("📊 RESUMO DA EXECUÇÃO");
@@ -414,8 +437,7 @@ async function Monitoramento() {
     return error;
   }
 }
+cron.schedule("0 8-20/2 * * 1-5", async () => {
+  await Monitoramento();
+});
 
-
-cron.schedule('0 8-20/2 * * 1-5',async ()=>{
-  await Monitoramento()
-} )

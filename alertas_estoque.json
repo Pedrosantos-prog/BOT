@@ -1,0 +1,2477 @@
+{
+  "timestamp": "2025-08-18T17:34:28.527Z",
+  "total_alertas": 38,
+  "alertas": [
+    {
+      "evento": "Girl Power 2025 - Salvador",
+      "url_key": "girl-power-run-salvador",
+      "alertas": [
+        {
+          "nome": "Kit Básico",
+          "title": "Tamanho de Camiseta",
+          "label": "Camiseta Girl Power SSA-BL M",
+          "sku": "GPR25SSA1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 26410
+        },
+        {
+          "nome": "Kit Básico",
+          "title": "Tamanho de Camiseta",
+          "label": "Camiseta Girl Power SSA-BL G",
+          "sku": "GPR25SSA1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 26410
+        },
+        {
+          "nome": "Kit Básico",
+          "title": "Tamanho de Camiseta",
+          "label": "Camiseta Girl Power SSA-BL GG",
+          "sku": "GPR25SSA1KB",
+          "estoque": 4,
+          "tipo": "bundle_option",
+          "produto_id": 26410
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL M",
+          "sku": "GPR25SSA1KP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32568
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL G",
+          "sku": "GPR25SSA1KP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32568
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL GG",
+          "sku": "GPR25SSA1KP",
+          "estoque": 4,
+          "tipo": "bundle_option",
+          "produto_id": 32568
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL M",
+          "sku": "GPR25SSA1KV",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32569
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL G",
+          "sku": "GPR25SSA1KV",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32569
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL GG",
+          "sku": "GPR25SSA1KV",
+          "estoque": 4,
+          "tipo": "bundle_option",
+          "produto_id": 32569
+        },
+        {
+          "nome": "Kit Promocional Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL M",
+          "sku": "GPR25SSA1KPROMO",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 40554
+        },
+        {
+          "nome": "Kit Promocional Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL G",
+          "sku": "GPR25SSA1KPROMO",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 40554
+        },
+        {
+          "nome": "Kit Promocional Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power SSA-BL GG",
+          "sku": "GPR25SSA1KPROMO",
+          "estoque": 4,
+          "tipo": "bundle_option",
+          "produto_id": 40554
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:38.622Z"
+    },
+    {
+      "evento": "Night Run 2025 - Etapa 1 - Brasília",
+      "url_key": "night-run-2025-brasilia",
+      "alertas": [
+        {
+          "nome": "Kit Night Run",
+          "title": "Camiseta",
+          "label": "Camiseta Night Run - BSB - 2025-BL",
+          "sku": "NRU25BSB2KB",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 28788
+        },
+        {
+          "nome": "Kit Bota Pra Correr ",
+          "title": "Camiseta",
+          "label": "Camiseta Night Run - BSB - 2025-BL",
+          "sku": "NRU25BSB2KBPC",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 31877
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Night Run - BSB - 2025-BL",
+          "sku": "NRU25BSB2KP",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 32449
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Night Run - BSB - 2025-BL",
+          "sku": "NRU25BSB2KSUPER",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 43119
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Night Run - BSB - 2025-BL",
+          "sku": "NRU25BSB2KVIP",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 43683
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Night Run - BSB - 2025-BL",
+          "sku": "NRU25BSB2KCAPDC",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 45157
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:12.199Z"
+    },
+    {
+      "evento": "Bravus Race - Speed  II - SP",
+      "url_key": "bravus-race-speed-sao-paulo-2-etapa-2025",
+      "alertas": [
+        {
+          "nome": "Kit Bravus",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-M",
+          "sku": "BRV25SP2KB",
+          "estoque": 26,
+          "tipo": "bundle_option",
+          "produto_id": 29078
+        },
+        {
+          "nome": "Kit Bravus",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-G",
+          "sku": "BRV25SP2KB",
+          "estoque": -2,
+          "tipo": "bundle_option",
+          "produto_id": 29078
+        },
+        {
+          "nome": "Kit Elite",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-M",
+          "sku": "BRV25SP2KE",
+          "estoque": 26,
+          "tipo": "bundle_option",
+          "produto_id": 31596
+        },
+        {
+          "nome": "Kit Elite",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-G",
+          "sku": "BRV25SP2KE",
+          "estoque": -2,
+          "tipo": "bundle_option",
+          "produto_id": 31596
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-M",
+          "sku": "BRV25SP2KP",
+          "estoque": 26,
+          "tipo": "bundle_option",
+          "produto_id": 31597
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-G",
+          "sku": "BRV25SP2KP",
+          "estoque": -2,
+          "tipo": "bundle_option",
+          "produto_id": 31597
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-M",
+          "sku": "BRV25SP2KV",
+          "estoque": 26,
+          "tipo": "bundle_option",
+          "produto_id": 31598
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-G",
+          "sku": "BRV25SP2KV",
+          "estoque": -2,
+          "tipo": "bundle_option",
+          "produto_id": 31598
+        },
+        {
+          "nome": "Kit Super Speed II ",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-M",
+          "sku": "BRV25SP2KSUPR",
+          "estoque": 26,
+          "tipo": "bundle_option",
+          "produto_id": 43072
+        },
+        {
+          "nome": "Kit Super Speed II ",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-G",
+          "sku": "BRV25SP2KSUPR",
+          "estoque": -2,
+          "tipo": "bundle_option",
+          "produto_id": 43072
+        },
+        {
+          "nome": "Kit Squad",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-M",
+          "sku": "BRV25SP2KSQD",
+          "estoque": 26,
+          "tipo": "bundle_option",
+          "produto_id": 44292
+        },
+        {
+          "nome": "Kit Squad",
+          "title": "Camiseta",
+          "label": "Camiseta - Bravus Speed - ET 2 - 2025-G",
+          "sku": "BRV25SP2KSQD",
+          "estoque": -2,
+          "tipo": "bundle_option",
+          "produto_id": 44292
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:13.103Z"
+    },
+    {
+      "evento": "Eco Run - Salvador - 2025",
+      "url_key": "eco-run-salvador-2025",
+      "alertas": [
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Eco Run - Salvador-GG",
+          "sku": "ECO25SSA1KP",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 33226
+        },
+        {
+          "nome": "Kit Sacochila",
+          "title": "Camiseta",
+          "label": "Camiseta Eco Run - Salvador-GG",
+          "sku": "ECO25SSA1KSCH",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 44053
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:14.102Z"
+    },
+    {
+      "evento": "Circuito das Estações 2025 - Primavera - Recife",
+      "url_key": "circuito-das-estacoes-2025-primavera-recife",
+      "alertas": [
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera REC-BL",
+          "sku": "CDE25RF3KB",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 30277
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera REC-BL",
+          "sku": "CDE25RF3KPLUS",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 41238
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera REC-BL",
+          "sku": "CDE25RF3KS",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 41242
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera REC-BL",
+          "sku": "CDE25RF3KCPT",
+          "estoque": 2,
+          "tipo": "bundle_option",
+          "produto_id": 44270
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:14.386Z"
+    },
+    {
+      "evento": "34º Troféu Brasil de Triathlon - 3 Etapa - 2025",
+      "url_key": "34-trofeu-brasil-de-triathlon-3-etap-2025",
+      "alertas": [
+        {
+          "nome": "Kit Amador",
+          "title": "Camiseta",
+          "label": "Camiseta - Troféu Brasil ET 3 - Santos-G",
+          "sku": "TBT25ST3KB",
+          "estoque": 45,
+          "tipo": "bundle_option",
+          "produto_id": 28989
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta - Troféu Brasil ET 3 - Santos-G",
+          "sku": "TBT25ST3KV",
+          "estoque": 45,
+          "tipo": "bundle_option",
+          "produto_id": 30760
+        },
+        {
+          "nome": "Kit Profissional",
+          "title": "Camiseta",
+          "label": "Camiseta - Troféu Brasil ET 3 - Santos-G",
+          "sku": "TBT25ST3KP",
+          "estoque": 45,
+          "tipo": "bundle_option",
+          "produto_id": 30763
+        },
+        {
+          "nome": "Kit Revezamento Dupla",
+          "title": "Camiseta",
+          "label": "Camiseta - Troféu Brasil ET 3 - Santos-G",
+          "sku": "TBT25ST3KRV2",
+          "estoque": 45,
+          "tipo": "bundle_option",
+          "produto_id": 30773
+        },
+        {
+          "nome": "Kit Revezamento Trio",
+          "title": "Camiseta",
+          "label": "Camiseta - Troféu Brasil ET 3 - Santos-G",
+          "sku": "TBT25ST3KRV3",
+          "estoque": 45,
+          "tipo": "bundle_option",
+          "produto_id": 30774
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta - Troféu Brasil ET 3 - Santos-G",
+          "sku": "TBT25ST3KPS",
+          "estoque": 45,
+          "tipo": "bundle_option",
+          "produto_id": 33530
+        },
+        {
+          "nome": "Kit Promocional Vip",
+          "title": "Camiseta",
+          "label": "Camiseta - Troféu Brasil ET 3 - Santos-G",
+          "sku": "TBT25ST3KPROMO",
+          "estoque": 45,
+          "tipo": "bundle_option",
+          "produto_id": 40453
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:14.836Z"
+    },
+    {
+      "evento": "Circuito das Estações 2025 - Primavera - Salvador",
+      "url_key": "circuito-das-estacoes-2025-primavera-salvador",
+      "alertas": [
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Inverno SSA-BL",
+          "sku": "CDE25SV3KB",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 30279
+        },
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "CDE25SV3KB",
+          "estoque": 4,
+          "tipo": "bundle_option",
+          "produto_id": 30279
+        },
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Inverno SSA-M",
+          "sku": "CDE25SV3KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 30279
+        },
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "CDE25SV3KB",
+          "estoque": 8,
+          "tipo": "bundle_option",
+          "produto_id": 30279
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:15.074Z"
+    },
+    {
+      "evento": "Rio S21K - Rio de Janeiro - 2025",
+      "url_key": "rio-s21k-2025",
+      "alertas": [
+        {
+          "nome": "Kit Rio S 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KB",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 27947
+        },
+        {
+          "nome": "Kit Rio S 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KB",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 27947
+        },
+        {
+          "nome": "Kit Rio S 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 27947
+        },
+        {
+          "nome": "Kit Plus 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KP",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 30655
+        },
+        {
+          "nome": "Kit Plus 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KP",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 30655
+        },
+        {
+          "nome": "Kit Plus 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 30655
+        },
+        {
+          "nome": "Kit Vip 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KV",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 30656
+        },
+        {
+          "nome": "Kit Vip 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KV",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 30656
+        },
+        {
+          "nome": "Kit Vip 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KV",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 30656
+        },
+        {
+          "nome": "Kit Super Vip - 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KSVIP",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 42151
+        },
+        {
+          "nome": "Kit Super Vip - 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KSVIP",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 42151
+        },
+        {
+          "nome": "Kit Super Vip - 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KSVIP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 42151
+        },
+        {
+          "nome": "Kit Capitão da Corrida - 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KCPT",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 42351
+        },
+        {
+          "nome": "Kit Capitão da Corrida - 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KCPT",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 42351
+        },
+        {
+          "nome": "Kit Capitão da Corrida - 21k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KCPT",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 42351
+        },
+        {
+          "nome": "Kit 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1K5K",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 44123
+        },
+        {
+          "nome": "Kit 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1K5K",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 44123
+        },
+        {
+          "nome": "Kit 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1K5K",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44123
+        },
+        {
+          "nome": "Kit Plus 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KPLUS5K",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 44131
+        },
+        {
+          "nome": "Kit Plus 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KPLUS5K",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 44131
+        },
+        {
+          "nome": "Kit Plus 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KPLUS5K",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44131
+        },
+        {
+          "nome": "Kit Vip 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KVIP5K",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 44132
+        },
+        {
+          "nome": "Kit Vip 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KVIP5K",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 44132
+        },
+        {
+          "nome": "Kit Vip 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KVIP5K",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44132
+        },
+        {
+          "nome": "Kit Super Vip - 5k ",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KSPR5K",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 44133
+        },
+        {
+          "nome": "Kit Super Vip - 5k ",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KSPR5K",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 44133
+        },
+        {
+          "nome": "Kit Super Vip - 5k ",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KSPR5K",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44133
+        },
+        {
+          "nome": "Kit Capitão da Corrida - 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KCPT5K",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 44155
+        },
+        {
+          "nome": "Kit Capitão da Corrida - 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KCPT5K",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 44155
+        },
+        {
+          "nome": "Kit Capitão da Corrida - 5k",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KCPT5K",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44155
+        },
+        {
+          "nome": "Kit Promocional 5k - R$ 70 OFF",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-BL",
+          "sku": "MRJ25RJ1KB5KPROMO",
+          "estoque": -5,
+          "tipo": "bundle_option",
+          "produto_id": 45051
+        },
+        {
+          "nome": "Kit Promocional 5k - R$ 70 OFF",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-P",
+          "sku": "MRJ25RJ1KB5KPROMO",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 45051
+        },
+        {
+          "nome": "Kit Promocional 5k - R$ 70 OFF",
+          "title": "Camiseta",
+          "label": "Camiseta RioS21K-M",
+          "sku": "MRJ25RJ1KB5KPROMO",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 45051
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:15.737Z"
+    },
+    {
+      "evento": "Circuito das Estações 2025 - Primavera - Belo Horizonte",
+      "url_key": "circuito-das-estacoes-2025-primavera-belo-horizonte",
+      "alertas": [
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BH-BL",
+          "sku": "CDE25BH3KB",
+          "estoque": -9,
+          "tipo": "bundle_option",
+          "produto_id": 30260
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BH-BL",
+          "sku": "CDE25BH3KPLUS",
+          "estoque": -9,
+          "tipo": "bundle_option",
+          "produto_id": 41539
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BH-BL",
+          "sku": "CDE25BH3KS",
+          "estoque": -9,
+          "tipo": "bundle_option",
+          "produto_id": 41540
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BH-BL",
+          "sku": "CDE25BH3KVIP",
+          "estoque": -9,
+          "tipo": "bundle_option",
+          "produto_id": 43590
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:15.906Z"
+    },
+    {
+      "evento": "Circuito das Estações 2025 - Primavera - Brasília",
+      "url_key": "circuito-das-estacoes-2025-primavera-brasilia",
+      "alertas": [
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-P",
+          "sku": "CDE25BS3KB",
+          "estoque": 37,
+          "tipo": "bundle_option",
+          "produto_id": 30262
+        },
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-M",
+          "sku": "CDE25BS3KB",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 30262
+        },
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-G",
+          "sku": "CDE25BS3KB",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 30262
+        },
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-GG",
+          "sku": "CDE25BS3KB",
+          "estoque": 8,
+          "tipo": "bundle_option",
+          "produto_id": 30262
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-P",
+          "sku": "CDE25BS3KPLUS",
+          "estoque": 37,
+          "tipo": "bundle_option",
+          "produto_id": 41536
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-M",
+          "sku": "CDE25BS3KPLUS",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 41536
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-G",
+          "sku": "CDE25BS3KPLUS",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 41536
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-GG",
+          "sku": "CDE25BS3KPLUS",
+          "estoque": 8,
+          "tipo": "bundle_option",
+          "produto_id": 41536
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-P",
+          "sku": "CDE25BS3KS",
+          "estoque": 37,
+          "tipo": "bundle_option",
+          "produto_id": 41537
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-M",
+          "sku": "CDE25BS3KS",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 41537
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-G",
+          "sku": "CDE25BS3KS",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 41537
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-GG",
+          "sku": "CDE25BS3KS",
+          "estoque": 8,
+          "tipo": "bundle_option",
+          "produto_id": 41537
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-P",
+          "sku": "CDE25BS3KVIP",
+          "estoque": 37,
+          "tipo": "bundle_option",
+          "produto_id": 43597
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-M",
+          "sku": "CDE25BS3KVIP",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 43597
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-G",
+          "sku": "CDE25BS3KVIP",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 43597
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-GG",
+          "sku": "CDE25BS3KVIP",
+          "estoque": 8,
+          "tipo": "bundle_option",
+          "produto_id": 43597
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-P",
+          "sku": "CDE25BS3KCDC",
+          "estoque": 37,
+          "tipo": "bundle_option",
+          "produto_id": 45064
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-M",
+          "sku": "CDE25BS3KCDC",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 45064
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-G",
+          "sku": "CDE25BS3KCDC",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 45064
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-GG",
+          "sku": "CDE25BS3KCDC",
+          "estoque": 8,
+          "tipo": "bundle_option",
+          "produto_id": 45064
+        },
+        {
+          "nome": "Kit Bota pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-P",
+          "sku": "CDE25BS3KBPC",
+          "estoque": 37,
+          "tipo": "bundle_option",
+          "produto_id": 45065
+        },
+        {
+          "nome": "Kit Bota pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-M",
+          "sku": "CDE25BS3KBPC",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 45065
+        },
+        {
+          "nome": "Kit Bota pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-G",
+          "sku": "CDE25BS3KBPC",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 45065
+        },
+        {
+          "nome": "Kit Bota pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera BSB-GG",
+          "sku": "CDE25BS3KBPC",
+          "estoque": 8,
+          "tipo": "bundle_option",
+          "produto_id": 45065
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:15.912Z"
+    },
+    {
+      "evento": "Circuito das Estações 2025 - Primavera - Porto Alegre",
+      "url_key": "circuito-das-estacoes-2025-primavera-porto-alegre",
+      "alertas": [
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25PO3KB",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 32145
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25PO3KPLUS",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 40949
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25PO3KS",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 40950
+        },
+        {
+          "nome": "Kit Bota Pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25PO3KBPC",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 40951
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25PO3KVIP",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 43676
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25PO3KCDC",
+          "estoque": -3,
+          "tipo": "bundle_option",
+          "produto_id": 44280
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:15.917Z"
+    },
+    {
+      "evento": "Circuito das Estações - Primavera - Fortaleza",
+      "url_key": "circuito-das-estacoes-primavera-fortaleza",
+      "alertas": [
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera FOR-BL",
+          "sku": "CDE25FT3KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 30268
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera FOR-BL",
+          "sku": "CDE25FT3KPLUS",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 41156
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera FOR-BL",
+          "sku": "CDE25FT3KS",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 41157
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera FOR-BL",
+          "sku": "CDE25FT3KVIP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43598
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera FOR-BL",
+          "sku": "CDE25FT3KCPT",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44265
+        },
+        {
+          "nome": "Kit Bota Pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta Primavera FOR-BL",
+          "sku": "CDE25FT3KBPC",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 45066
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:16.795Z"
+    },
+    {
+      "evento": "Circuito das Estações 2025 - Primavera - Belém",
+      "url_key": "circuito-das-estacoes-2025-primavera-belem",
+      "alertas": [
+        {
+          "nome": "Kit Estações",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25BL3KB",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 31287
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25BL3KV",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 40988
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25BL3KPLUS",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 40989
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25BL3KS",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 40990
+        },
+        {
+          "nome": "Kit Bota Pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25BL3KBPC",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 40991
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Circuito Das Estações - Primavera - 2025-BL",
+          "sku": "CDE25BL3KCPT",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 44289
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:16.848Z"
+    },
+    {
+      "evento": "Fuga das Ilhas 2025",
+      "url_key": "fuga-das-ilhas-sp-2025",
+      "alertas": [
+        {
+          "nome": "Kit Amador",
+          "title": "Camiseta",
+          "label": "Camiseta - Fuga Das Ilhas - 2025-G",
+          "sku": "AQA25SS2KB",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 29145
+        },
+        {
+          "nome": "Kit Amador",
+          "title": "Camiseta",
+          "label": "Camiseta - Fuga Das Ilhas - 2025-GG",
+          "sku": "AQA25SS2KB",
+          "estoque": 25,
+          "tipo": "bundle_option",
+          "produto_id": 29145
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta - Fuga Das Ilhas - 2025-G",
+          "sku": "AQA25SS2KCDC",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 45050
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta - Fuga Das Ilhas - 2025-GG",
+          "sku": "AQA25SS2KCDC",
+          "estoque": 25,
+          "tipo": "bundle_option",
+          "produto_id": 45050
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:17.610Z"
+    },
+    {
+      "evento": "Treino Exclusivo Ticket - 2025",
+      "url_key": "treino-exclusivo-ticket-2025",
+      "alertas": [
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão Ticket - SP 2025-BL",
+          "sku": "TREX25SP1KB",
+          "estoque": 19,
+          "tipo": "bundle_option",
+          "produto_id": 32017
+        },
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão Ticket - SP 2025-P",
+          "sku": "TREX25SP1KB",
+          "estoque": 20,
+          "tipo": "bundle_option",
+          "produto_id": 32017
+        },
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão Ticket - SP 2025-M",
+          "sku": "TREX25SP1KB",
+          "estoque": 29,
+          "tipo": "bundle_option",
+          "produto_id": 32017
+        },
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão Ticket - SP 2025-G",
+          "sku": "TREX25SP1KB",
+          "estoque": 19,
+          "tipo": "bundle_option",
+          "produto_id": 32017
+        },
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão Ticket - SP 2025-GG",
+          "sku": "TREX25SP1KB",
+          "estoque": 14,
+          "tipo": "bundle_option",
+          "produto_id": 32017
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:17.648Z"
+    },
+    {
+      "evento": "Night Run 2025 - Etapa 1 - Manaus",
+      "url_key": "night-run-2025-etapa-1-manaus",
+      "alertas": [
+        {
+          "nome": "Kit Night Run",
+          "title": "Camiseta",
+          "label": "Camiseta Night 2 - Manaus - 2025-BL",
+          "sku": "NRU25MN2KB",
+          "estoque": 33,
+          "tipo": "bundle_option",
+          "produto_id": 32124
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Night 2 - Manaus - 2025-BL",
+          "sku": "NRU25MN2KP",
+          "estoque": 33,
+          "tipo": "bundle_option",
+          "produto_id": 32543
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta Night 2 - Manaus - 2025-BL",
+          "sku": "NRU25MN2KSUPER",
+          "estoque": 33,
+          "tipo": "bundle_option",
+          "produto_id": 43179
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Night 2 - Manaus - 2025-BL",
+          "sku": "NRU25MN2KVIP",
+          "estoque": 33,
+          "tipo": "bundle_option",
+          "produto_id": 43729
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta Night 2 - Manaus - 2025-BL",
+          "sku": "NRU25MN2KCDC",
+          "estoque": 33,
+          "tipo": "bundle_option",
+          "produto_id": 45126
+        },
+        {
+          "nome": "Kit Bota Pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta Night 2 - Manaus - 2025-BL",
+          "sku": "NRU25MN2KBPC",
+          "estoque": 33,
+          "tipo": "bundle_option",
+          "produto_id": 45127
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:18.127Z"
+    },
+    {
+      "evento": "Eco Run Piracicaba - 2025",
+      "url_key": "eco-run-piracicaba-2025",
+      "alertas": [
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "ECO25PI1KP",
+          "estoque": 21,
+          "tipo": "bundle_option",
+          "produto_id": 33229
+        },
+        {
+          "nome": "Kit Sacochila",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "ECO25PI1KSCH",
+          "estoque": 21,
+          "tipo": "bundle_option",
+          "produto_id": 44055
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:18.433Z"
+    },
+    {
+      "evento": "Girl Power 2025 - Recife",
+      "url_key": "girl-power-2025-recife",
+      "alertas": [
+        {
+          "nome": "Kit Básico",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-P",
+          "sku": "GPR25REC1KB",
+          "estoque": -37,
+          "tipo": "bundle_option",
+          "produto_id": 32196
+        },
+        {
+          "nome": "Kit Básico",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-M",
+          "sku": "GPR25REC1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32196
+        },
+        {
+          "nome": "Kit Básico",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-G",
+          "sku": "GPR25REC1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32196
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-P",
+          "sku": "GPR25REC1KP",
+          "estoque": -37,
+          "tipo": "bundle_option",
+          "produto_id": 32566
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-M",
+          "sku": "GPR25REC1KP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32566
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-G",
+          "sku": "GPR25REC1KP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32566
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-P",
+          "sku": "GPR25REC1KV",
+          "estoque": -37,
+          "tipo": "bundle_option",
+          "produto_id": 32567
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-M",
+          "sku": "GPR25REC1KV",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32567
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-G",
+          "sku": "GPR25REC1KV",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 32567
+        },
+        {
+          "nome": "Kit Promocional Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-P",
+          "sku": "GPR25REC1KPROMO",
+          "estoque": -37,
+          "tipo": "bundle_option",
+          "produto_id": 40561
+        },
+        {
+          "nome": "Kit Promocional Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-M",
+          "sku": "GPR25REC1KPROMO",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 40561
+        },
+        {
+          "nome": "Kit Promocional Vip",
+          "title": "Camiseta",
+          "label": "Camiseta Girl Power 2025 Recife-G",
+          "sku": "GPR25REC1KPROMO",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 40561
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:19.303Z"
+    },
+    {
+      "evento": "SRUN - VITÓRIA",
+      "url_key": "s-run-vitoria",
+      "alertas": [
+        {
+          "nome": "Kit Básico",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "EVSRUN25SPVTK",
+          "estoque": -1365,
+          "tipo": "bundle_option",
+          "produto_id": 33241
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:19.527Z"
+    },
+    {
+      "evento": "Banco do Brasil 2025 - Salvador",
+      "url_key": "circuito-banco-do-brasil-2029-salvador-1",
+      "alertas": [
+        {
+          "nome": "Kit (1 Adulto + 1 Criança)",
+          "title": "Camiseta",
+          "label": "Camiseta-PP - Infantil",
+          "sku": "BBR25SVP1KB1AD1CR",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 34488
+        },
+        {
+          "nome": "Kit (1 Adulto + 1 Criança)",
+          "title": "Camiseta",
+          "label": "Camiseta-P- Infantil",
+          "sku": "BBR25SVP1KB1AD1CR",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 34488
+        },
+        {
+          "nome": "Kit (1 Adulto + 1 Criança)",
+          "title": "Camiseta",
+          "label": "Camiseta-M - Infantil",
+          "sku": "BBR25SVP1KB1AD1CR",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 34488
+        },
+        {
+          "nome": "Kit (1 Adulto + 2 Crianças)",
+          "title": "Camiseta",
+          "label": "Camiseta-PP - Infantil",
+          "sku": "BBR25SVP1KB1AD2CR",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 34508
+        },
+        {
+          "nome": "Kit (1 Adulto + 2 Crianças)",
+          "title": "Camiseta",
+          "label": "Camiseta-P- Infantil",
+          "sku": "BBR25SVP1KB1AD2CR",
+          "estoque": 30,
+          "tipo": "bundle_option",
+          "produto_id": 34508
+        },
+        {
+          "nome": "Kit (1 Adulto + 2 Crianças)",
+          "title": "Camiseta",
+          "label": "Camiseta-M - Infantil",
+          "sku": "BBR25SVP1KB1AD2CR",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 34508
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:19.563Z"
+    },
+    {
+      "evento": "SRUN - PALMAS",
+      "url_key": "s-run-palmas",
+      "alertas": [
+        {
+          "nome": "KIT SRUN",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "EVSRUN25SNPLK",
+          "estoque": -1365,
+          "tipo": "bundle_option",
+          "produto_id": 33327
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:19.615Z"
+    },
+    {
+      "evento": "SRUN- TERESINA",
+      "url_key": "s-run-teresina",
+      "alertas": [
+        {
+          "nome": "KIT SRUN",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "EVSRUN25SNTRK",
+          "estoque": -1365,
+          "tipo": "bundle_option",
+          "produto_id": 33322
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:19.666Z"
+    },
+    {
+      "evento": "SRUN - NATAL",
+      "url_key": "s-run-natal",
+      "alertas": [
+        {
+          "nome": "KIT SRUN",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "EVSRUN25SNTK",
+          "estoque": -1365,
+          "tipo": "bundle_option",
+          "produto_id": 33311
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:19.685Z"
+    },
+    {
+      "evento": "SRUN - NOVO HAMBURGO",
+      "url_key": "s-run-novo-hamburgo",
+      "alertas": [
+        {
+          "nome": "KIT SRUN",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "EVSRUN25NHK",
+          "estoque": -1365,
+          "tipo": "bundle_option",
+          "produto_id": 33341
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:19.911Z"
+    },
+    {
+      "evento": "SRUN - LONDRINA",
+      "url_key": "s-run-londrina",
+      "alertas": [
+        {
+          "nome": "KIT SRUN",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "EVSRUN25LDK",
+          "estoque": -1365,
+          "tipo": "bundle_option",
+          "produto_id": 33335
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:20.221Z"
+    },
+    {
+      "evento": "SRUN - BLUMENAU",
+      "url_key": "s-run-blumenau",
+      "alertas": [
+        {
+          "nome": "KIT SRUN",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "EVSRUN25BLKB",
+          "estoque": -1365,
+          "tipo": "bundle_option",
+          "produto_id": 33386
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:20.322Z"
+    },
+    {
+      "evento": "Biomas - Pantanal - Campo Grande - 2025 ",
+      "url_key": "biomas-campo-grande-2025",
+      "alertas": [
+        {
+          "nome": "Kit Circuito Biomas por todo Brasil",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "CCB25CG1KB",
+          "estoque": 29,
+          "tipo": "bundle_option",
+          "produto_id": 36506
+        },
+        {
+          "nome": "Kit Circuito Biomas por todo Brasil",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "CCB25CG1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 36506
+        },
+        {
+          "nome": "Kit Circuito Biomas por todo Brasil",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "CCB25CG1KB",
+          "estoque": 3,
+          "tipo": "bundle_option",
+          "produto_id": 36506
+        },
+        {
+          "nome": "Meia Inscrição",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "CCB25CG1KMM",
+          "estoque": 29,
+          "tipo": "bundle_option",
+          "produto_id": 45135
+        },
+        {
+          "nome": "Meia Inscrição",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "CCB25CG1KMM",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 45135
+        },
+        {
+          "nome": "Meia Inscrição",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "CCB25CG1KMM",
+          "estoque": 3,
+          "tipo": "bundle_option",
+          "produto_id": 45135
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:22.382Z"
+    },
+    {
+      "evento": "Night Run - Goiânia 2025",
+      "url_key": "night-run-gioania-2025",
+      "alertas": [
+        {
+          "nome": "Kit Night Run ",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "NRU25GO2KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 37373
+        },
+        {
+          "nome": "Kit Night Run ",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "NRU25GO2KB",
+          "estoque": 23,
+          "tipo": "bundle_option",
+          "produto_id": 37373
+        },
+        {
+          "nome": "Kit Night Run ",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "NRU25GO2KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 37373
+        },
+        {
+          "nome": "Kit Night Run ",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "NRU25GO2KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 37373
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "NRU25GO2KP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 41462
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "NRU25GO2KP",
+          "estoque": 23,
+          "tipo": "bundle_option",
+          "produto_id": 41462
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "NRU25GO2KP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 41462
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "NRU25GO2KP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 41462
+        },
+        {
+          "nome": "Kit Bota Pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "NRU25GO2KBPC",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 41464
+        },
+        {
+          "nome": "Kit Bota Pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "NRU25GO2KBPC",
+          "estoque": 23,
+          "tipo": "bundle_option",
+          "produto_id": 41464
+        },
+        {
+          "nome": "Kit Bota Pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "NRU25GO2KBPC",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 41464
+        },
+        {
+          "nome": "Kit Bota Pra Correr",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "NRU25GO2KBPC",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 41464
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "NRU25GO2KSUPER",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43183
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "NRU25GO2KSUPER",
+          "estoque": 23,
+          "tipo": "bundle_option",
+          "produto_id": 43183
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "NRU25GO2KSUPER",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43183
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "NRU25GO2KSUPER",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43183
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "NRU25GO2KVIP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43760
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "NRU25GO2KVIP",
+          "estoque": 23,
+          "tipo": "bundle_option",
+          "produto_id": 43760
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "NRU25GO2KVIP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43760
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "NRU25GO2KVIP",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43760
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "NRU25GO2KCPT",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44300
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "NRU25GO2KCPT",
+          "estoque": 23,
+          "tipo": "bundle_option",
+          "produto_id": 44300
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "NRU25GO2KCPT",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44300
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "NRU25GO2KCPT",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44300
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:22.513Z"
+    },
+    {
+      "evento": "Night Run - Cuiabá - 2025",
+      "url_key": "night-run-cuiaba-2025",
+      "alertas": [
+        {
+          "nome": "Kit Night Run ",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "NRU25CB1KB",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 37395
+        },
+        {
+          "nome": "Kit Super",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "NRU25CB1KSUPER",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 43563
+        },
+        {
+          "nome": "Kit Plus",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "NRU25CB1KPLUS",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 43567
+        },
+        {
+          "nome": "Kit Vip",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "NRU25CB1KVIP",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 43764
+        },
+        {
+          "nome": "Kit Capitão da Corrida",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "NRU25CB1KCDC",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 45144
+        },
+        {
+          "nome": "Kit Bota pra Correr",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "NRU25CB1KBPC",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 45145
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:22.821Z"
+    },
+    {
+      "evento": "Travessia de Copa",
+      "url_key": "travessia-de-copa",
+      "alertas": [
+        {
+          "nome": "Kit Travessia de Copa",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "TCS25RJ1KB",
+          "estoque": 6,
+          "tipo": "bundle_option",
+          "produto_id": 37659
+        },
+        {
+          "nome": "Kit Travessia de Copa",
+          "title": "Camiseta",
+          "label": "null",
+          "sku": "TCS25RJ1KB",
+          "estoque": -104,
+          "tipo": "bundle_option",
+          "produto_id": 37659
+        },
+        {
+          "nome": "Kit Travessia de Copa",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "TCS25RJ1KB",
+          "estoque": -164,
+          "tipo": "bundle_option",
+          "produto_id": 37659
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:22.988Z"
+    },
+    {
+      "evento": "Só Quero Pedalar - Rio de Janeiro - 2025",
+      "url_key": "so-quero-pedalar-rio-de-janeiro-2025",
+      "alertas": [
+        {
+          "nome": "Kit Bike - Só Quero Pedalar",
+          "title": "Bike",
+          "label": "Bicicleta - Só Quero Pedalar 2025",
+          "sku": "SQP25RJ1KBE",
+          "estoque": 33,
+          "tipo": "bundle_option",
+          "produto_id": 38241
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:23.496Z"
+    },
+    {
+      "evento": "Arena Pão de Açúcar - São Paulo - 2025",
+      "url_key": "arena-p-o-de-acucar-s-o-paulo-2025",
+      "alertas": [
+        {
+          "nome": "Kit Arena Pão de Açúcar",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "CPA25SP1KB",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 38705
+        },
+        {
+          "nome": "Kit Arena Pão de Açúcar",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "CPA25SP1KB",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 38705
+        },
+        {
+          "nome": "Kit Arena Pão de Açúcar",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "CPA25SP1KB",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 38705
+        },
+        {
+          "nome": "Kit Arena Pão de Açúcar",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "CPA25SP1KB",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 38705
+        },
+        {
+          "nome": "Kit Arena Pão de Açúcar",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "CPA25SP1KB",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 38705
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:24.803Z"
+    },
+    {
+      "evento": "Eco Run - Special Edition - São Paulo - 2025",
+      "url_key": "eco-run-special-edition-s-o-paulo-2025",
+      "alertas": [
+        {
+          "nome": "Kit Eco Run - Special Edition",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "ECO0625SP1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 38636
+        },
+        {
+          "nome": "Kit Eco Run - Special Edition",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "ECO0625SP1KB",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 38636
+        },
+        {
+          "nome": "Kit Eco Run - Special Edition",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "ECO0625SP1KB",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 38636
+        },
+        {
+          "nome": "Kit Eco Run - Special Edition - R$100 OFF",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "ECO0625SP1KPROMO",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 44563
+        },
+        {
+          "nome": "Kit Eco Run - Special Edition - R$100 OFF",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "ECO0625SP1KPROMO",
+          "estoque": -1,
+          "tipo": "bundle_option",
+          "produto_id": 44563
+        },
+        {
+          "nome": "Kit Eco Run - Special Edition - R$100 OFF",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "ECO0625SP1KPROMO",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 44563
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:25.632Z"
+    },
+    {
+      "evento": "Copa VO2 - Campos do Jordão - 2025",
+      "url_key": "copa-vo2-campo-de-jord-o-2025",
+      "alertas": [
+        {
+          "nome": "Kit Amador - Copa VO2",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "CPVO2SP1KA",
+          "estoque": 40,
+          "tipo": "bundle_option",
+          "produto_id": 40254
+        },
+        {
+          "nome": "Kit Amador - Copa VO2",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "CPVO2SP1KA",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 40254
+        },
+        {
+          "nome": "Kit Amador - Copa VO2",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "CPVO2SP1KA",
+          "estoque": 16,
+          "tipo": "bundle_option",
+          "produto_id": 40254
+        },
+        {
+          "nome": "Kit Elite - Copa VO2",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "CPVO2SP1KE",
+          "estoque": 40,
+          "tipo": "bundle_option",
+          "produto_id": 40255
+        },
+        {
+          "nome": "Kit Elite - Copa VO2",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "CPVO2SP1KE",
+          "estoque": 9,
+          "tipo": "bundle_option",
+          "produto_id": 40255
+        },
+        {
+          "nome": "Kit Elite - Copa VO2",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "CPVO2SP1KE",
+          "estoque": 16,
+          "tipo": "bundle_option",
+          "produto_id": 40255
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:25.648Z"
+    },
+    {
+      "evento": "Treinão Tecnobank ",
+      "url_key": "trein-o-tecnobank",
+      "alertas": [
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "TRNTECNOBNK25SPKB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43102
+        },
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "TRNTECNOBNK25SPKB",
+          "estoque": 7,
+          "tipo": "bundle_option",
+          "produto_id": 43102
+        },
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "TRNTECNOBNK25SPKB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 43102
+        },
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "TRNTECNOBNK25SPKB",
+          "estoque": 5,
+          "tipo": "bundle_option",
+          "produto_id": 43102
+        },
+        {
+          "nome": "Kit Treinão",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "TRNTECNOBNK25SPKB",
+          "estoque": 1,
+          "tipo": "bundle_option",
+          "produto_id": 43102
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:26.282Z"
+    },
+    {
+      "evento": "Triathlon Internacional de Santos - 2026 ",
+      "url_key": "triathlon-internacional-de-santos-2026",
+      "alertas": [
+        {
+          "nome": "Kit Triathlon Internacional de Santos",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "TIS26ST1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 42378
+        },
+        {
+          "nome": "Kit Triathlon Internacional de Santos",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "TIS26ST1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 42378
+        },
+        {
+          "nome": "Kit Triathlon Internacional de Santos",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "TIS26ST1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 42378
+        },
+        {
+          "nome": "Kit Triathlon Internacional de Santos",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "TIS26ST1KB",
+          "estoque": 0,
+          "tipo": "bundle_option",
+          "produto_id": 42378
+        },
+        {
+          "nome": "Kit Triathlon Internacional de Santos",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "TIS26ST1KB",
+          "estoque": 29,
+          "tipo": "bundle_option",
+          "produto_id": 42378
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:26.762Z"
+    },
+    {
+      "evento": "Só Quero Pedalar - Caruaru - 2025",
+      "url_key": "so-quero-pedalar-caruaru-2025",
+      "alertas": [
+        {
+          "nome": "Kit Só Quero Pedalar ",
+          "title": "Camiseta",
+          "label": "Camiseta-BL",
+          "sku": "SQP25PE1KB",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 44005
+        },
+        {
+          "nome": "Kit Só Quero Pedalar ",
+          "title": "Camiseta",
+          "label": "Camiseta-P",
+          "sku": "SQP25PE1KB",
+          "estoque": 50,
+          "tipo": "bundle_option",
+          "produto_id": 44005
+        },
+        {
+          "nome": "Kit Só Quero Pedalar ",
+          "title": "Camiseta",
+          "label": "Camiseta-M",
+          "sku": "SQP25PE1KB",
+          "estoque": 47,
+          "tipo": "bundle_option",
+          "produto_id": 44005
+        },
+        {
+          "nome": "Kit Só Quero Pedalar ",
+          "title": "Camiseta",
+          "label": "Camiseta-G",
+          "sku": "SQP25PE1KB",
+          "estoque": 47,
+          "tipo": "bundle_option",
+          "produto_id": 44005
+        },
+        {
+          "nome": "Kit Só Quero Pedalar ",
+          "title": "Camiseta",
+          "label": "Camiseta-GG",
+          "sku": "SQP25PE1KB",
+          "estoque": 48,
+          "tipo": "bundle_option",
+          "produto_id": 44005
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:26.775Z"
+    },
+    {
+      "evento": "Treinão de Lançamento Powerade Sour - São Paulo - 2025",
+      "url_key": "trein-o-powerade-s-o-paulo-2025",
+      "alertas": [
+        {
+          "nome": "Kit Treinão Powerade",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão-BL",
+          "sku": "TRNPWRD25SPKB",
+          "estoque": 10,
+          "tipo": "bundle_option",
+          "produto_id": 44701
+        },
+        {
+          "nome": "Kit Treinão Powerade",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão-P",
+          "sku": "TRNPWRD25SPKB",
+          "estoque": 18,
+          "tipo": "bundle_option",
+          "produto_id": 44701
+        },
+        {
+          "nome": "Kit Treinão Powerade",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão-M",
+          "sku": "TRNPWRD25SPKB",
+          "estoque": 18,
+          "tipo": "bundle_option",
+          "produto_id": 44701
+        },
+        {
+          "nome": "Kit Treinão Powerade",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão-G",
+          "sku": "TRNPWRD25SPKB",
+          "estoque": 18,
+          "tipo": "bundle_option",
+          "produto_id": 44701
+        },
+        {
+          "nome": "Kit Treinão Powerade",
+          "title": "Camiseta",
+          "label": "Camiseta Treinão-GG",
+          "sku": "TRNPWRD25SPKB",
+          "estoque": 10,
+          "tipo": "bundle_option",
+          "produto_id": 44701
+        }
+      ],
+      "timestamp": "2025-08-18T17:34:26.939Z"
+    }
+  ]
+}
