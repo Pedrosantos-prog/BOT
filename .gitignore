@@ -1,0 +1,6 @@
+.env
+node_modules
+.package-lock.json
+.querys.txt
+.alerta_estoque.xlsx
+.alertas_estoque.json
