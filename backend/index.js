@@ -334,10 +334,9 @@ async function enviarEmailAlerta() {
 
     // Usando a estrutura correta da sua função enviarEmail
     const destinatarios = [
-      // "alexandre.braga@nortemkt.com",
-      // "otavio.michelato@nortemkt.com",
-      // "cesar.vital@nortemkt.com",
-      'julia.correa@nortemkt.com'
+      "alexandre.braga@nortemkt.com",
+      "otavio.michelato@nortemkt.com",
+      "cesar.vital@nortemkt.com"
     ];
       await enviarEmail(
         destinatarios,
@@ -430,6 +429,7 @@ async function Monitoramento() {
     const { results, errors } = await concurrency(list, LIMITE);
     // Envia email apenas se houver alertas
     await enviarEmailAlerta();
+    await saveMessages();
     await salvarExcelAlertas("alertas_estoque.json", ALERTAS);
     // Limpa arquivo temporário
     await deleteJSON(INPUT_FILE);
