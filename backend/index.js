@@ -5,7 +5,6 @@ import fs from "fs/promises";
 import enviarEmail from "./send.js";
 import salvarExcelAlertas from "./alertExcel.js";
 import cron from "node-cron";
-import { title } from "process";
 
 // ==== CONFIG ====
 const endpoint = "https://runningland.com.br/graphql";
@@ -108,6 +107,7 @@ function processarAlertas(produto, nomeEvento) {
   // Verifica produtos relacionados (onde está o quantity)
   if (produto.related_products) {
     produto.related_products.forEach((produtoRelacionado) => {
+      // FILTRO: Ignora produtos patrocinadores pelo nome do produto relacionado
       if (
         produtoRelacionado.name &&
         produtoRelacionado.name.toLowerCase().includes("patrocinador")
@@ -118,32 +118,21 @@ function processarAlertas(produto, nomeEvento) {
       // Verifica items do bundle se existir
       if (produtoRelacionado.items) {
         produtoRelacionado.items.forEach((item) => {
+          // Filtros para itens que devem ser ignorados
+          if (item.title && item.title.toLowerCase().includes("bateria"))return;
+          if (item.title && item.title.toLowerCase().includes("distância"))return;
+          if (item.title && item.title.toLowerCase().includes("termo")) return;
+          if (item.title && item.title.toLowerCase().includes("aceite")) return;
+          if (item.title && item.title.toLowerCase().includes("jaqueta"))return;
+          if (item.title && item.title.toLowerCase().includes("boné")) return;
+          if (item.title && item.title.toLowerCase().includes("moletom"))return;
+
           if (item.options) {
             item.options.forEach((option) => {
               const quantidade = option.quantity || 0;
               if (quantidade <= LIMITE_ESTOQUE) {
-                if (item.title && item.title.toLowerCase().includes("bateria"))
-                  return; // Pula este item na exibição}
-                if (
-                  item.title &&
-                  item.title.toLowerCase().includes("distância")
-                )
-                  return;
-                if (item.title && item.title.toLowerCase().includes("termo"))
-                  return;
-                if (item.title && item.title.toLowerCase().includes("aceite"))
-                  return;
-                if (item.title && item.title.toLowerCase().includes("jaqueta"))
-                  return;
-                if (item.title && item.title.toLowerCase().includes("boné"))
-                  return;
-                if (item.title && item.title.toLowerCase().includes("moletom"))
-                  return;
-
                 alertasProduto.push({
-                  nome: `${produtoRelacionado.name}`,
-                  title: `${item.title}`,
-                  label: `${option.label}`,
+                  nome: `${produtoRelacionado.name} - ${item.title} - ${option.label}`,
                   sku: produtoRelacionado.sku,
                   estoque: quantidade,
                   tipo: "bundle_option",
@@ -281,6 +270,7 @@ function formatEventMessage(dataProduct, temAlertas = false) {
     return `❌ Erro ao processar dados: ${error.message}`;
   }
 }
+
 // Função para gerar relatório de alertas
 function gerarRelatorioAlertas() {
   if (ALERTAS.length === 0) {
@@ -293,14 +283,38 @@ function gerarRelatorioAlertas() {
   relatorio += `${"=".repeat(50)}\n\n`;
 
   ALERTAS.forEach((evento, index) => {
-    relatorio += `${index + 1}. 🏃‍♂️ ${evento.evento}\n`;
-    relatorio += `   ⚠️  Alertas encontrados:\n`;
+    relatorio += `${index + 1}. 🏃‍♂️ ${evento.evento}\n\n`;
+
+    // Agrupa alertas por kit
+    const kitsAgrupados = {};
 
     evento.alertas.forEach((alerta) => {
-      relatorio += `      • ${alerta.nome}\n`;
-      relatorio += `        ${alerta.label} | Estoque: ${alerta.estoque} unidades\n`;
+      // Extrai o nome do kit (primeira parte antes do " - ")
+      const partesNome = alerta.nome.split(" - ");
+      const nomeKit = partesNome[0]; // Ex: "Kit Night Run"
+      const tamanho = partesNome[partesNome.length - 1]; // Ex: "P", "M", "G"
+
+      if (!kitsAgrupados[nomeKit]) {
+        kitsAgrupados[nomeKit] = [];
+      }
+
+      kitsAgrupados[nomeKit].push({
+        tamanho: tamanho,
+        estoque: alerta.estoque,
+      });
+    });
+
+    // Exibe cada kit agrupado
+    Object.keys(kitsAgrupados).forEach((nomeKit) => {
+      relatorio += `    ${nomeKit}\n`;
+
+      kitsAgrupados[nomeKit].forEach((item) => {
+        relatorio += `    camiseta ${item.tamanho}: ${item.estoque}\n`;
+      });
+
       relatorio += `\n`;
     });
+
     relatorio += `\n`;
   });
 
@@ -320,19 +334,18 @@ async function enviarEmailAlerta() {
 
     // Usando a estrutura correta da sua função enviarEmail
     const destinatarios = [
-      "alexandre.braga@nortemkt.com",
-      "otavio.michelato@nortemkt.com",
-      "cesar.vital@nortemkt.com",
+      // "alexandre.braga@nortemkt.com",
+      // "otavio.michelato@nortemkt.com",
+      // "cesar.vital@nortemkt.com",
+      'julia.correa@nortemkt.com'
     ];
-    // const destinatarios = ["julia.correa@nortemkt.com"];
-
-    await enviarEmail(
-      destinatarios,
-      assunto,
-      relatorio,
-      "alerta_estoque.xlsx",
-      ALERTAS
-    );
+      await enviarEmail(
+        destinatarios,
+        assunto,
+        relatorio,
+        "alerta_estoque.xlsx",
+        ALERTAS
+      );
 
     console.log(
       `📧 Email de alerta enviado! ${ALERTAS.length} evento(s) com estoque baixo`
@@ -411,15 +424,13 @@ async function concurrency(list, limit) {
 async function Monitoramento() {
   try {
     console.log("🚀 Iniciando monitoramento de estoque...");
+
     await getURL();
     const list = await readURL(INPUT_FILE);
     const { results, errors } = await concurrency(list, LIMITE);
     // Envia email apenas se houver alertas
-    // Gera a planilha 1x (se houver alertas)
-    if (ALERTAS.length > 0) {
-      await salvarExcelAlertas("alerta_estoque.xlsx", ALERTAS);
-    }
     await enviarEmailAlerta();
+    await salvarExcelAlertas("alertas_estoque.json", ALERTAS);
     // Limpa arquivo temporário
     await deleteJSON(INPUT_FILE);
     // Resumo final
@@ -437,7 +448,12 @@ async function Monitoramento() {
     return error;
   }
 }
-cron.schedule("0 8-20/2 * * 1-5", async () => {
-  await Monitoramento();
-});
 
+// De 3 em 3 minutos, horário comercial, segunda a sexta
+cron.schedule('0 8-20/2 * * 1-5',async ()=>{
+  try{
+    await Monitoramento()
+  }catch(error){
+    throw new Error("Tafefa cancelada:"+error.message);
+  }
+})

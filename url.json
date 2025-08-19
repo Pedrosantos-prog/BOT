@@ -1,0 +1,1682 @@
+[
+  {
+    "ID evento": "26375",
+    "Evento": "34º Troféu Brasil de Triathlon - 1 Etapa - 2025",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "34-trofeu-brasil-de-triathlon-1-etapa-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26393",
+    "Evento": "Girl Power Run - São Paulo",
+    "date": "2025-03-23T03:00:00.000Z",
+    "URL": "girl-power-run-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26415",
+    "Evento": "Girl Power 2025 - Salvador",
+    "date": "2025-08-24T03:00:00.000Z",
+    "URL": "girl-power-run-salvador",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26518",
+    "Evento": "Bravus Race - Speed  I - SP ",
+    "date": "2025-03-23T03:00:00.000Z",
+    "URL": "bravus-race-speed-sao-paulo-1-etapa-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26519",
+    "Evento": "33º Triathlon Internacional De Santos ",
+    "date": "2025-03-16T03:00:00.000Z",
+    "URL": "triathlon-internacional-de-santos",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27477",
+    "Evento": "25ª Meia Maratona Internacional da Cidade de São Paulo",
+    "date": "2025-04-13T03:00:00.000Z",
+    "URL": "25-meia-maratona-internacional-da-cidade-de-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27766",
+    "Evento": "Night Run 2025 - Etapa 1 - Rio De Janeiro",
+    "date": "2025-06-28T03:00:00.000Z",
+    "URL": "night-run-etapa1-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26343",
+    "Evento": "Circuito do Sol - São Paulo - 2025",
+    "date": "2025-02-09T03:00:00.000Z",
+    "URL": "circuito-do-sol-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26356",
+    "Evento": "Circuito do Sol - Rio de Janeiro - 2025",
+    "date": "2025-02-16T03:00:00.000Z",
+    "URL": "circuito-do-sol-riodejaneiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "23679",
+    "Evento": "14ª Meia & Maratona de Florianópolis - 42k de Floripa",
+    "date": "2025-06-22T03:00:00.000Z",
+    "URL": "14-meia-maratona-de-florianopolis-42k-de-floripa",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28764",
+    "Evento": "Night Run 2025 - Etapa 1 - Recife",
+    "date": "2025-05-24T03:00:00.000Z",
+    "URL": "night-run-recife-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28775",
+    "Evento": "Night Run 2025 - Etapa 1 - Brasília",
+    "date": "2025-11-01T03:00:00.000Z",
+    "URL": "night-run-2025-brasilia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28789",
+    "Evento": "Night Run - Campinas - 2025",
+    "date": "2025-09-13T03:00:00.000Z",
+    "URL": "night-run-campinas-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28800",
+    "Evento": "Night Run - Porto Alegre - 2025",
+    "date": "2025-11-22T03:00:00.000Z",
+    "URL": "night-run-porto-alegre-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28811",
+    "Evento": "Night Run 2025 - Curitiba",
+    "date": "2025-08-09T03:00:00.000Z",
+    "URL": "night-run-curitiba-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28856",
+    "Evento": "Night Run 2025 - Etapa 1 - Belo Horizonte",
+    "date": "2025-11-08T03:00:00.000Z",
+    "URL": "night-run-belo-horizonte-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28898",
+    "Evento": "Night Run 2025 - Etapa 1 - Salvador",
+    "date": "2025-10-18T03:00:00.000Z",
+    "URL": "night-run-salvador-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28910",
+    "Evento": "Night Run 2025 - Etapa 1 - Fortaleza ",
+    "date": "2025-10-04T03:00:00.000Z",
+    "URL": "night-run-fortaleza-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28940",
+    "Evento": "Night Run 2025 - Etapa 2 - Rio de Janeiro",
+    "date": "2025-10-25T03:00:00.000Z",
+    "URL": "night-run-2025-etapa-2-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28952",
+    "Evento": "Night Run 2025 - Etapa 2 - São Paulo",
+    "date": "2025-11-01T03:00:00.000Z",
+    "URL": "night-run-2025-etapa-2-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28955",
+    "Evento": "Combo Night Run - Duas Etapas - São Paulo",
+    "date": "2025-10-05T03:00:00.000Z",
+    "URL": "combo-night-run-duas-etapas-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27921",
+    "Evento": "Night Run 2025 - Etapa 1 - São Paulo",
+    "date": "2025-05-10T03:00:00.000Z",
+    "URL": "night-run-sp-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28966",
+    "Evento": "34º Troféu Brasil de Triathlon - 2 Etapa - 2025",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "34-trofeu-brasil-de-triathlon-2-et-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28990",
+    "Evento": "34º Troféu Brasil de Triathlon - 4 Etapa - 2025",
+    "date": "2025-12-14T03:00:00.000Z",
+    "URL": "34-trofeu-brasil-de-triathlon-4-etapa-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26570",
+    "Evento": "Bravus Race - Fire - São Paulo - 2025",
+    "date": "2025-05-25T03:00:00.000Z",
+    "URL": "bravus-race-fire-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29073",
+    "Evento": "Bravus Race - Speed  II - SP",
+    "date": "2025-11-30T03:00:00.000Z",
+    "URL": "bravus-race-speed-sao-paulo-2-etapa-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29082",
+    "Evento": "Combo Troféu Brasil 2025  - Quatro etapas",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "combo-triatlhon-quatro-etapas",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29083",
+    "Evento": "Bravus Race - Monster - São Paulo 2025",
+    "date": "2025-08-17T03:00:00.000Z",
+    "URL": "bravus-race-monster-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29113",
+    "Evento": "Bravus Race - Speed - Belo Horizonte 2025",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "bravus-race-speed-belo-horizonte-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29116",
+    "Evento": "Combo Triatlhon - Quatro etapas + TIS",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "combo-triatlhon-quatro-etapas-tis",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29159",
+    "Evento": "Combo Aqua",
+    "date": "2025-05-11T03:00:00.000Z",
+    "URL": "combo-aqua",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29259",
+    "Evento": "Combo Estações + Night Run - São Paulo",
+    "date": "2025-03-16T03:00:00.000Z",
+    "URL": "combo-estacoes-night-run-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29289",
+    "Evento": "Combo Estações + Night Run - Rio de Janeiro",
+    "date": "2025-03-16T03:00:00.000Z",
+    "URL": "combo-estacoes-night-run-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29320",
+    "Evento": "Combo Estações + Night Run - Brasília",
+    "date": "2025-03-23T03:00:00.000Z",
+    "URL": "combo-estacoes-night-run-brasilia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29361",
+    "Evento": "Combo Estações + Night Run - Belo Horizonte",
+    "date": "2025-03-23T03:00:00.000Z",
+    "URL": "combo-estacoes-night-run-belo-horizonte",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29393",
+    "Evento": "Combo Estações + Night Run - Salvador",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "combo-estacoes-night-run-salvador",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29469",
+    "Evento": "Combo Estações + Night Run - Fortaleza",
+    "date": "2025-04-06T03:00:00.000Z",
+    "URL": "combo-estacoes-night-run-fortaleza",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29470",
+    "Evento": "Combo Meias & Maratonas",
+    "date": "2025-04-13T03:00:00.000Z",
+    "URL": "combo-meias-maratonas",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29512",
+    "Evento": "Combo Estações + Night Run - Recife",
+    "date": "2025-04-13T03:00:00.000Z",
+    "URL": "combo-estacoes-night-run-recife",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29592",
+    "Evento": "Combo Estações + Night Run - Curitiba",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "combo-estacoes-night-run-curitiba",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29805",
+    "Evento": "Bull Run - 2025",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "bull-run-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29864",
+    "Evento": "Circuito Juntos - Bota pra Correr - São Paulo 2025",
+    "date": "2025-08-17T03:00:00.000Z",
+    "URL": "circuito-juntos-bota-pra-correr-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29902",
+    "Evento": "Circuito das Estações 2025 - Inverno - Brasília",
+    "date": "2025-06-29T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-brasilia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29905",
+    "Evento": "Eco Run - Porto Alegre - 2025",
+    "date": "2025-07-13T03:00:00.000Z",
+    "URL": "eco-run-porto-alegre-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29907",
+    "Evento": "Eco Run - São Paulo - 2025",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "eco-run-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29916",
+    "Evento": "Eco Run - Lençóis Paulista - 2025",
+    "date": "2025-04-06T03:00:00.000Z",
+    "URL": "eco-run-lencois-paulista-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29926",
+    "Evento": "Eco Run - Salvador - 2025",
+    "date": "2025-11-09T03:00:00.000Z",
+    "URL": "eco-run-salvador-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29943",
+    "Evento": "Girl Power 2025 - Brasília ",
+    "date": "2025-10-19T03:00:00.000Z",
+    "URL": "girl-power-2025-brasilia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29967",
+    "Evento": "Girl Power 2025 - Rio de Janeiro",
+    "date": "2025-10-12T03:00:00.000Z",
+    "URL": "girl-power-2025-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30252",
+    "Evento": "Circuito das Estações 2025 - Inverno - Recife",
+    "date": "2025-07-06T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-recife",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30257",
+    "Evento": "Circuito das Estações 2025 - Inverno - Curitiba",
+    "date": "2025-07-20T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-curitiba",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30276",
+    "Evento": "Circuito das Estações 2025 - Primavera - Recife",
+    "date": "2025-09-21T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-recife",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30278",
+    "Evento": "Circuito das Estações 2025 - Primavera - Salvador",
+    "date": "2025-09-28T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-salvador",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30281",
+    "Evento": "Circuito das Estações 2025 - Primavera - Curitiba",
+    "date": "2025-09-14T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-curitiba",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30297",
+    "Evento": "Circuito das Estações 2025 - Verão - Recife",
+    "date": "2025-11-16T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-recife",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30300",
+    "Evento": "Circuito das Estações 2025 - Verão - Salvador",
+    "date": "2025-12-14T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-salvador",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30310",
+    "Evento": "Circuito das Estações 2025 - Verão - Curitiba",
+    "date": "2025-11-30T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-curitiba",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30324",
+    "Evento": "Meia de Sampa 2025 - São Paulo",
+    "date": "2025-11-16T03:00:00.000Z",
+    "URL": "meia-de-sampa-2025-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28982",
+    "Evento": "34º Troféu Brasil de Triathlon - 3 Etapa - 2025",
+    "date": "2025-09-28T03:00:00.000Z",
+    "URL": "34-trofeu-brasil-de-triathlon-3-etap-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26492",
+    "Evento": "Circuito das Estações 2025 - Outono - Recife",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-recife",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27112",
+    "Evento": "Circuito das Estações - 2025 - Outono - São Paulo",
+    "date": "2025-03-16T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-outono-sao-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26591",
+    "Evento": "Circuito das Estações - 2025 - Outono - Rio de Janeiro",
+    "date": "2025-03-16T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26592",
+    "Evento": "Circuito das Estações 2025 - Outono - Brasília ",
+    "date": "2025-03-23T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-brasilia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26480\t",
+    "Evento": "Circuito das Estações 2025 - Outono - Fortaleza",
+    "date": "2025-04-06T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-fortaleza",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26505",
+    "Evento": "Circuito das Estações 2025 - Outono - Salvador",
+    "date": "2025-04-13T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-salvador",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28014",
+    "Evento": "Circuito das Estações 2025 - Outono - Curitiba",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-curitiba",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28030",
+    "Evento": "Circuito das Estações 2025 - Outono - Porto Alegre",
+    "date": "2025-05-11T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-porto-alegre",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28032",
+    "Evento": "Circuito das Estações 2025 - Outono - Manaus",
+    "date": "2025-03-30T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-manaus",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26423",
+    "Evento": "Circuito das Estações 2025 - Outono - Belo Horizonte ",
+    "date": "2025-03-23T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-belo-horizonte",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27948",
+    "Evento": "Rio S21K - Rio de Janeiro - 2025",
+    "date": "2025-09-07T03:00:00.000Z",
+    "URL": "rio-s21k-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30509",
+    "Evento": "Circuito das Estações - 2025 - Inverno - Porto Alegre ",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-poa",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30510",
+    "Evento": "Circuito das Estações 2025 - Primavera - Porto Alegre",
+    "date": "2025-09-14T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-porto-alegre",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27133",
+    "Evento": "Circuito das Estações 2025 - Primavera- Rio de Janeiro",
+    "date": "2025-09-21T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27138",
+    "Evento": "Circuito das Estações 2025 - Verão - Rio de Janeiro",
+    "date": "2025-12-07T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27140",
+    "Evento": "Circuito das Estações 2025 - Inverno - Belo Horizonte",
+    "date": "2025-07-13T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-belo-horizonte",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30259",
+    "Evento": "Circuito das Estações 2025 - Primavera - Belo Horizonte",
+    "date": "2025-09-07T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-belo-horizonte",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30283",
+    "Evento": "Circuito das Estações 2025 - Verão - Belo Horizonte",
+    "date": "2025-11-30T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-belo-horizonte",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30261",
+    "Evento": "Circuito das Estações 2025 - Primavera - Brasília",
+    "date": "2025-08-31T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-brasilia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30285",
+    "Evento": "Circuito das Estações 2025 - Verão - Brasília",
+    "date": "2025-12-07T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-brasilia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "28357",
+    "Evento": "Circuito das Estações 2025 - Outono - Belém",
+    "date": "2025-03-23T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-belem",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30511",
+    "Evento": "Circuito das Estações 2025 - Inverno - Manaus",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-manaus",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30512",
+    "Evento": "Circuito das Estações 2025 - Inverno - Belém",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-belem",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27114",
+    "Evento": "Circuito das Estações 2025 - Inverno - São Paulo",
+    "date": "2025-06-29T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-inverno-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30250",
+    "Evento": "Circuito das Estações 2025 - Inverno - Fortaleza",
+    "date": "2025-06-29T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-fortaleza",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30254",
+    "Evento": "Circuito das Estações 2025 - Inverno - Salvador",
+    "date": "2025-07-20T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-salvador",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27116",
+    "Evento": "Circuito das Estações Primavera - São Paulo",
+    "date": "2025-09-07T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-primavera-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30273",
+    "Evento": "Circuito das Estações - Primavera - Fortaleza",
+    "date": "2025-09-14T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-primavera-fortaleza",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30514",
+    "Evento": "Circuito das Estações 2025 - Primavera - Manaus ",
+    "date": "2025-09-14T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-manaus",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30515",
+    "Evento": "Circuito das Estações 2025 - Primavera - Belém",
+    "date": "2025-09-07T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-belem",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30516",
+    "Evento": "Circuito das Estações 2025 - Verão - Porto Alegre",
+    "date": "2025-12-07T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-porto-alegre",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30517",
+    "Evento": "Circuito das Estações 2025 - Verão - Manaus",
+    "date": "2025-11-09T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-manaus",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30518",
+    "Evento": "Circuito das Estações 2025 - Verão - Belém",
+    "date": "2025-12-14T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-belem",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27130",
+    "Evento": "Circuito das Estações 2025 - Verão - São Paulo",
+    "date": "2025-12-14T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-ver-o-s-o-paulo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30291",
+    "Evento": "Circuito das Estações 2025 - Verão - Fortaleza",
+    "date": "2025-11-30T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-ver-o-fortaleza",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29146",
+    "Evento": "Eco Run - Rio de Janeiro - 2025",
+    "date": "2025-07-27T03:00:00.000Z",
+    "URL": "eco-run-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30312",
+    "Evento": "Corrida de Vera Cruz - Rio de Janeiro - 2025",
+    "date": "2025-12-31T03:00:00.000Z",
+    "URL": "vera-cruz-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29142",
+    "Evento": "Fuga das Ilhas 2025",
+    "date": "2025-11-30T03:00:00.000Z",
+    "URL": "fuga-das-ilhas-sp-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26548",
+    "Evento": "Volta Do Parcel ",
+    "date": "2025-05-11T03:00:00.000Z",
+    "URL": "volta-do-parcel",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30540",
+    "Evento": "Blue Run - Porto Alegre",
+    "date": "2025-03-16T03:00:00.000Z",
+    "URL": "blue-run-2025-porto-alegre-cortesia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26560",
+    "Evento": "Bravus Race - Speed - Rio de Janeiro - 2025",
+    "date": "2025-07-27T03:00:00.000Z",
+    "URL": "bravusrace-speed-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "30950",
+    "Evento": "Corrida do Bem Eco - Parauapebas",
+    "date": "2025-09-21T03:00:00.000Z",
+    "URL": "corrida-do-bem-eco-parauapebas",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "26480",
+    "Evento": "Circuito das Estações 2025 - Outono - Fortaleza",
+    "date": "2025-04-06T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-fortaleza-cortesia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32008",
+    "Evento": "Treino Exclusivo Ticket - 2025",
+    "date": "2025-01-21T03:00:00.000Z",
+    "URL": "treino-exclusivo-ticket-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32018",
+    "Evento": "Treinão Maurten Experience- 2025",
+    "date": "2025-02-01T03:00:00.000Z",
+    "URL": "trein-o-maurten-experience-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32060",
+    "Evento": "Circuito das Estações 2025 - Outono - Jacobina",
+    "date": "2025-05-04T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-outono-jacobina",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32071",
+    "Evento": "Night Run 2025 - Etapa 1 - Maceió",
+    "date": "2025-05-17T03:00:00.000Z",
+    "URL": "night-run-2025-etapa-1-maceio",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32072",
+    "Evento": "Night Run 2025 - Etapa 1 - João Pessoa",
+    "date": "2025-05-31T03:00:00.000Z",
+    "URL": "night-run-2025-etapa-1-jo-o-pessoa",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32073",
+    "Evento": "Night Run 2025 - Etapa 1 - Campo Grande",
+    "date": "2025-06-28T03:00:00.000Z",
+    "URL": "night-run-2025-etapa-1-campo-grande",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32074",
+    "Evento": "Night Run 2025 - Etapa 1 - Manaus",
+    "date": "2025-10-25T03:00:00.000Z",
+    "URL": "night-run-2025-etapa-1-manaus",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32075",
+    "Evento": "Night Run 2025 - Etapa 1 - Belém",
+    "date": "2025-09-20T03:00:00.000Z",
+    "URL": "night-run-2025-etapa-1-belem",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32176",
+    "Evento": "Girl Power 2025 - Fortaleza",
+    "date": "2025-08-17T03:00:00.000Z",
+    "URL": "girl-power-2025-fortaleza",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32271",
+    "Evento": "SRUN - EDIÇÃO LOBAS",
+    "date": "2025-02-08T03:00:00.000Z",
+    "URL": "s-run",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32365",
+    "Evento": "Arena Verão Pão de Açúcar 2025 - Riviera de São Lourenço",
+    "date": "2025-03-02T03:00:00.000Z",
+    "URL": "arena-ver-o-p-o-de-acucar-2025-riviera-de-s-o-lourenco",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29860",
+    "Evento": "Eco Run - Sorocaba",
+    "date": "2025-08-03T03:00:00.000Z",
+    "URL": "eco-run-sorocaba-etapa-1",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32387",
+    "Evento": "Eco Run Belém - 2025",
+    "date": "2025-10-26T03:00:00.000Z",
+    "URL": "eco-run-belem-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32408",
+    "Evento": "Eco Run Brasília - 2025",
+    "date": "2025-07-06T03:00:00.000Z",
+    "URL": "eco-run-bra-silia-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32421",
+    "Evento": "Eco Run Piracicaba - 2025",
+    "date": "2025-08-24T03:00:00.000Z",
+    "URL": "eco-run-piracicaba-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32440",
+    "Evento": "Eco Run 2025 - Recife",
+    "date": "2025-10-05T03:00:00.000Z",
+    "URL": "eco-run-2025-rec-ife",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32465",
+    "Evento": "Banco do Brasil 2025 - Campo Grande",
+    "date": "2025-05-18T03:00:00.000Z",
+    "URL": "circuito-banco-do-brasil-2025-campo-grande",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32473",
+    "Evento": "Banco do Brasil 2025 - São Luís",
+    "date": "2025-08-03T03:00:00.000Z",
+    "URL": "circuito-banco-do-brasil-2025-s-o-luis",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32481",
+    "Evento": "Banco do Brasil 2025 - Salvador",
+    "date": "2025-07-06T03:00:00.000Z",
+    "URL": "circuito-banco-do-brasil-2029-salvador-1",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32489",
+    "Evento": "Banco do Brasil 2025 - São Paulo",
+    "date": "2025-06-08T03:00:00.000Z",
+    "URL": "circuito-banco-do-brasil-2025-sp",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32497",
+    "Evento": "Circuito Banco do Brasil 2025 - RJ",
+    "date": "2025-07-20T03:00:00.000Z",
+    "URL": "circuito-circuito-banco-do-brasil-2025-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32505",
+    "Evento": "Circuito Banco do Brasil 2025 - João Pessoa",
+    "date": "2025-08-17T03:00:00.000Z",
+    "URL": "circuito-banco-do-brasil-2025-jo-o-pessoa",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32513",
+    "Evento": "Circuito Banco do Brasil 2025 - Porto Alegre ",
+    "date": "2025-09-14T03:00:00.000Z",
+    "URL": "circuito-banco-do-brasil-2025-porto-alegre",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32588",
+    "Evento": "Circuito Banco do Brasil 2025 - Belo Horizonte",
+    "date": "2025-10-12T03:00:00.000Z",
+    "URL": "circuito-banco-do-brasil-2025-belo-horizonte",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32596",
+    "Evento": "Circuito Banco do Brasil 2025 - Belém",
+    "date": "2025-11-30T03:00:00.000Z",
+    "URL": "circuito-banco-do-brasil-2025-belem",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32187",
+    "Evento": "Girl Power 2025 - Recife",
+    "date": "2025-08-31T03:00:00.000Z",
+    "URL": "girl-power-2025-recife",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33193",
+    "Evento": "S Run -  SP ",
+    "date": "2025-06-01T03:00:00.000Z",
+    "URL": "s-run-sp2",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33240",
+    "Evento": "SRUN - VITÓRIA",
+    "date": "2025-11-02T03:00:00.000Z",
+    "URL": "s-run-vitoria",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33263",
+    "Evento": "S Run - Sorocaba",
+    "date": "2025-06-08T03:00:00.000Z",
+    "URL": "s-run-sorocaba",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33283",
+    "Evento": "SRUN - UBERLÂNDIA",
+    "date": "2025-08-03T03:00:00.000Z",
+    "URL": "s-run-uberlandia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33310",
+    "Evento": "SRUN - NATAL",
+    "date": "2025-09-28T03:00:00.000Z",
+    "URL": "s-run-natal",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33321",
+    "Evento": "SRUN- TERESINA",
+    "date": "2025-10-12T03:00:00.000Z",
+    "URL": "s-run-teresina",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33326",
+    "Evento": "SRUN - PALMAS",
+    "date": "2025-10-19T03:00:00.000Z",
+    "URL": "s-run-palmas",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33334",
+    "Evento": "SRUN - LONDRINA",
+    "date": "2025-11-30T03:00:00.000Z",
+    "URL": "s-run-londrina",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33340",
+    "Evento": "SRUN - NOVO HAMBURGO",
+    "date": "2025-12-07T03:00:00.000Z",
+    "URL": "s-run-novo-hamburgo",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33348",
+    "Evento": "S Run - São Luis",
+    "date": "2025-12-21T03:00:00.000Z",
+    "URL": "s-run-joiville",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33349",
+    "Evento": "Energy Land - SP ",
+    "date": "2025-05-18T03:00:00.000Z",
+    "URL": "energy-land-sp",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33359",
+    "Evento": "Energy Land - RJ ",
+    "date": "2025-08-24T03:00:00.000Z",
+    "URL": "energy-land-rj",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33385",
+    "Evento": "SRUN - BLUMENAU",
+    "date": "2025-12-14T03:00:00.000Z",
+    "URL": "s-run-blumenau",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33397",
+    "Evento": "Girl Power Run - Paracatu ",
+    "date": "2025-07-06T03:00:00.000Z",
+    "URL": "girl-power-run-paracatu",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33423",
+    "Evento": "23ª Corrida e Caminhada Comexport Graacc ",
+    "date": "2025-05-11T03:00:00.000Z",
+    "URL": "23-corrida-e-caminhada-comexport-graacc",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33586",
+    "Evento": "Eco Run - Edição Especial - RJ  2025",
+    "date": "2025-04-27T03:00:00.000Z",
+    "URL": "eco-run-special-edition",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33624",
+    "Evento": "New Balance 15k São Paulo 2025",
+    "date": "2025-08-10T03:00:00.000Z",
+    "URL": "new-balance-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33654",
+    "Evento": "Netshoes - São Paulo",
+    "date": "2025-08-24T03:00:00.000Z",
+    "URL": "netshoes",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33722",
+    "Evento": "Circuito das Estações - Inverno - Natal",
+    "date": "2025-07-26T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-inverno-natal",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33182",
+    "Evento": "S Run - Piracicaba",
+    "date": "2025-05-18T03:00:00.000Z",
+    "URL": "s-run-piracicaba",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "33932",
+    "Evento": "EVENTO TESTE - RETIRADA DE KIT",
+    "date": "2025-02-26T03:00:00.000Z",
+    "URL": "evento-teste",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "34073",
+    "Evento": "Treinão Tecnobank - 2025",
+    "date": "2025-04-05T03:00:00.000Z",
+    "URL": "trein-o-tecnobank-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "34613",
+    "Evento": "Netshoes - Brasília",
+    "date": "2025-05-18T03:00:00.000Z",
+    "URL": "nestshoes-brasilia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "34661",
+    "Evento": "Treinão Maurten Experience",
+    "date": "2025-03-29T03:00:00.000Z",
+    "URL": "trein-o-maurten-experience",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "34694",
+    "Evento": "Girl Power - João Pessoa",
+    "date": "2025-05-18T03:00:00.000Z",
+    "URL": "girl-power-jo-o-pessoa",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "34739",
+    "Evento": "Treinão Netshoes - Belo Horizonte",
+    "date": "2025-03-29T03:00:00.000Z",
+    "URL": "trein-o-netshoes-belo-horizonte",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "29806",
+    "Evento": "Eco Run - Belo Horizonte - 2025",
+    "date": "2025-06-08T03:00:00.000Z",
+    "URL": "eco-run-belo-horizonte-2025-cortesia",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "35121",
+    "Evento": "Energy Land 2025 - Belo Horizonte ",
+    "date": "2025-07-06T03:00:00.000Z",
+    "URL": "energy-land-2025-belo-horizonte",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "35358",
+    "Evento": "Circuito das Estações 2025 - Inverno - João Pessoa",
+    "date": "2025-07-06T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-jo-o-pessoa",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "35495",
+    "Evento": "Eco Run - Pindamonhangaba - 2025",
+    "date": "2025-08-31T03:00:00.000Z",
+    "URL": "eco-run-pindamonhangaba-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36114",
+    "Evento": "Circuito das Estações 2025 - Inverno - Jacobina",
+    "date": "2025-07-27T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-jacobina",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36313",
+    "Evento": "Girl Power - Belo Horizonte - 2025 ",
+    "date": "2025-06-08T03:00:00.000Z",
+    "URL": "girl-power-belo-horizonte-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36329",
+    "Evento": "Eco Run - Londrina - 2025 ",
+    "date": "2025-09-14T03:00:00.000Z",
+    "URL": "eco-run-londrina-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36340",
+    "Evento": "Circuito Biomas por Todo Brasil - Mata Atlântica - 2025 ",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "biomas-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36450",
+    "Evento": "Biomas - Pampa - Porto Alegre - 2025 ",
+    "date": "2025-08-10T03:00:00.000Z",
+    "URL": "biomas-porto-alegre-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36479",
+    "Evento": "Biomas - Amazônia - Belém - 2025 ",
+    "date": "2025-10-05T03:00:00.000Z",
+    "URL": "biomas-belem-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36496",
+    "Evento": "Biomas - Pantanal - Campo Grande - 2025 ",
+    "date": "2025-09-07T03:00:00.000Z",
+    "URL": "biomas-campo-grande-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36525",
+    "Evento": "Corrida do Bem Eco - Inhotim - 2025",
+    "date": "2025-05-18T03:00:00.000Z",
+    "URL": "corrida-do-bem-eco-inhotim-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36611",
+    "Evento": "Girl Power - Teresina",
+    "date": "2025-11-16T03:00:00.000Z",
+    "URL": "girl-power-teresina",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36988",
+    "Evento": "Super Humans - Piracicaba - 2025 ",
+    "date": "2025-07-13T03:00:00.000Z",
+    "URL": "super-humans-piracicaba-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37342",
+    "Evento": "Night Run - Aracaju  2025 ",
+    "date": "2025-10-11T03:00:00.000Z",
+    "URL": "night-run-aracaju-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37363",
+    "Evento": "Night Run - Goiânia 2025",
+    "date": "2025-08-23T03:00:00.000Z",
+    "URL": "night-run-gioania-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37385",
+    "Evento": "Night Run - Cuiabá - 2025",
+    "date": "2025-08-30T03:00:00.000Z",
+    "URL": "night-run-cuiaba-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37406",
+    "Evento": "Night Run - Florianópolis - 2025",
+    "date": "2025-11-15T03:00:00.000Z",
+    "URL": "night-run-florianopolis-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37479",
+    "Evento": "Bravus Race - Speed - Belo Horizonte - Grupos 2025 - DESATIVADO ",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "bravus-race-speed-belo-horizonte-grupos-2025-desativado",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37526",
+    "Evento": "Rio S21K - Grupos - 2025",
+    "date": "2025-09-07T03:00:00.000Z",
+    "URL": "rio-s21k-grupos-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37649",
+    "Evento": "Travessia de Copa",
+    "date": "2025-08-31T03:00:00.000Z",
+    "URL": "travessia-de-copa",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37670",
+    "Evento": "Mov Enel - Osasco - 2025",
+    "date": "2025-09-28T03:00:00.000Z",
+    "URL": "mov-enel-osasco-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37701",
+    "Evento": "Mov Enel - Niterói - 2025",
+    "date": "2025-11-02T03:00:00.000Z",
+    "URL": "mov-enel-niteroi-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37716",
+    "Evento": "Mov Enel - Fortaleza - 2025",
+    "date": "2025-07-20T03:00:00.000Z",
+    "URL": "mov-enel-fortaleza-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37754",
+    "Evento": "Circuitinho das Estações - São Paulo - 2025",
+    "date": "2025-10-05T03:00:00.000Z",
+    "URL": "circuitinho-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37814",
+    "Evento": "Só Quero Pedalar - São Paulo - 2025",
+    "date": "2025-07-13T03:00:00.000Z",
+    "URL": "so-quero-pedalar-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37856",
+    "Evento": "Só Quero Pedalar - Rio de Janeiro - 2025",
+    "date": "2025-11-09T03:00:00.000Z",
+    "URL": "so-quero-pedalar-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37879",
+    "Evento": "Eco Run - Itatiba - 2025",
+    "date": "2025-08-24T03:00:00.000Z",
+    "URL": "eco-run-itatiba-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37773",
+    "Evento": "Circuitinho das Estações - Brasília - 2025",
+    "date": "2025-10-11T03:00:00.000Z",
+    "URL": "circuitinho-brasilia-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37815",
+    "Evento": "Circuitinho das Estações - Recife - 2025",
+    "date": "2025-10-18T03:00:00.000Z",
+    "URL": "circuitinho-recife-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37982",
+    "Evento": "Evento Teste Bravus 2025 - Grupos",
+    "date": "2025-05-04T03:00:00.000Z",
+    "URL": "evento-teste-bravus-2025-grupos",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37986",
+    "Evento": "Bravus Race - Speed - Belo Horizonte - Grupos 2025",
+    "date": "2025-09-30T03:00:00.000Z",
+    "URL": "bravus-race-speed-belo-horizonte-grupos-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38054",
+    "Evento": "New Balance 15k Rio de Janeiro 2025",
+    "date": "2025-10-26T03:00:00.000Z",
+    "URL": "new-balance-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37933",
+    "Evento": "Treinão Santander - Edição Little Monster",
+    "date": "2025-04-26T03:00:00.000Z",
+    "URL": "trein-o-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38103",
+    "Evento": "Blue Run - Niterói - 2025",
+    "date": "2025-05-18T03:00:00.000Z",
+    "URL": "blue-run-niteroi-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "27131",
+    "Evento": "Circuito das Estações 2025 - Inverno - Rio de Janeiro",
+    "date": "2025-06-15T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-rio-de-janeiro",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38316",
+    "Evento": "S Run - SP - Grupos - 2025",
+    "date": "2026-04-22T03:00:00.000Z",
+    "URL": "s-run-sp-grupos-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38317",
+    "Evento": "Circuito das Estações 2025 - Inverno - Rio de Janeiro - Grupos",
+    "date": "2025-06-01T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-grupos",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38407",
+    "Evento": "Circuito das Estações 2025 - Inverno - Manaus - Grupos",
+    "date": "2025-06-29T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-inverno-manaus-grupos",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38515",
+    "Evento": "Blue Run - São Paulo 2025",
+    "date": "2025-07-20T03:00:00.000Z",
+    "URL": "blue-run-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38570",
+    "Evento": "Blue Run Fortaleza 2025",
+    "date": "2025-07-13T03:00:00.000Z",
+    "URL": "blue-run-fortaleza",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38596",
+    "Evento": "Blue Run Jundiaí 2025",
+    "date": "2025-06-08T03:00:00.000Z",
+    "URL": "blue-run-jundiai-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36167",
+    "Evento": "Circuito de Corridas Vale - São Luis - 2025 ",
+    "date": "2025-06-01T03:00:00.000Z",
+    "URL": "circuito-de-corridas-vale-s-o-luis-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38687",
+    "Evento": "Arena Pão de Açúcar - São Paulo - 2025",
+    "date": "2025-09-28T03:00:00.000Z",
+    "URL": "arena-p-o-de-acucar-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36374",
+    "Evento": "Biomas - Caatinga -  Teresina - 2025 ",
+    "date": "2025-11-02T03:00:00.000Z",
+    "URL": "biomas-teresina-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38908",
+    "Evento": "Girl Power - Paracatu - 2025",
+    "date": "2025-07-06T03:00:00.000Z",
+    "URL": "girl-power-paracatu-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39027",
+    "Evento": "Urban Walk - São Paulo - 2025",
+    "date": "2025-07-27T03:00:00.000Z",
+    "URL": "urban-walk-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38910",
+    "Evento": "Corrida do Bem Eco - Vale Santa Inês - 2025",
+    "date": "2025-07-13T03:00:00.000Z",
+    "URL": "corrida-do-bem-eco-vale-santa-ines-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39160",
+    "Evento": "Urban Walk - Rio de Janeiro - 2025 ",
+    "date": "2025-11-09T03:00:00.000Z",
+    "URL": "urban-walk-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39283",
+    "Evento": "Girl Power Run 2025 - Aracaju",
+    "date": "2025-08-16T03:00:00.000Z",
+    "URL": "girl-power-rua-2025-aracaju",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39320",
+    "Evento": "Eco Run - Mossoró - 2025",
+    "date": "2025-08-03T03:00:00.000Z",
+    "URL": "eco-run-mossoro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39387",
+    "Evento": "Corrida do Bem Eco - Açailândia - 2025",
+    "date": "2025-06-29T03:00:00.000Z",
+    "URL": "corrida-do-bem-eco-acailandia-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39641",
+    "Evento": "Meia Internacional da cidade de São Paulo - 2026 ",
+    "date": "2026-04-26T03:00:00.000Z",
+    "URL": "meia-internacional-da-cidade-de-s-o-paulo-2026",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39761",
+    "Evento": "Família em Movimento - Rio de Janeiro - 2025",
+    "date": "2025-06-28T03:00:00.000Z",
+    "URL": "familia-em-movimento-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39972",
+    "Evento": "Energy Land - Porto Alegre - 2025",
+    "date": "2025-11-02T03:00:00.000Z",
+    "URL": "energy-land-porto-alegre-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "40245",
+    "Evento": "Copa VO2 - Campos do Jordão - 2025",
+    "date": "2025-08-31T03:00:00.000Z",
+    "URL": "copa-vo2-campo-de-jord-o-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "40269",
+    "Evento": "Bota pra Correr - Rio de Janeiro - 2025",
+    "date": "2025-09-28T03:00:00.000Z",
+    "URL": "bota-pra-correr-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36208",
+    "Evento": "Circuito de Corridas Vale - Nova Lima - 2025 ",
+    "date": "2025-06-22T03:00:00.000Z",
+    "URL": "circuito-de-corridas-vale-nova-lima-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "40481",
+    "Evento": "Treinão Adidas - Rio de Janeiro - 2025",
+    "date": "2025-06-07T03:00:00.000Z",
+    "URL": "trein-o-adidas-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36195",
+    "Evento": "Circuito de Corridas Vale - Parauapebas - 2025 ",
+    "date": "2025-07-06T03:00:00.000Z",
+    "URL": "circuito-de-corridas-vale-parauapebas-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "36415",
+    "Evento": "Circuito Biomas por todo Brasil - Cerrado - 2025 ",
+    "date": "2025-07-20T03:00:00.000Z",
+    "URL": "biomas-brasilia-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "38632",
+    "Evento": "Eco Run - Special Edition - São Paulo - 2025",
+    "date": "2025-09-28T03:00:00.000Z",
+    "URL": "eco-run-special-edition-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "32197",
+    "Evento": "Girl Power 2025 - Vitória",
+    "date": "2025-08-24T03:00:00.000Z",
+    "URL": "girl-power-2025-vitoria",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "42018",
+    "Evento": "Blue Bike - Niterói - 2025",
+    "date": "2025-09-28T03:00:00.000Z",
+    "URL": "blue-bike-niteroi-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "42027",
+    "Evento": "Blue Bike - São Paulo - 2025",
+    "date": "2025-10-12T03:00:00.000Z",
+    "URL": "blue-bike-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "37681",
+    "Evento": "Circuitinho das Estações - Rio de Janeiro - 2025 ",
+    "date": "2025-09-20T03:00:00.000Z",
+    "URL": "circuitinho-rio-de-janeiro-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "39937",
+    "Evento": "Blue Run - Florianópolis - 2025",
+    "date": "2025-08-17T03:00:00.000Z",
+    "URL": "blue-run-florianopolis-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "40801",
+    "Evento": "Super Humans - São Paulo - 2025",
+    "date": "2025-09-21T03:00:00.000Z",
+    "URL": "super-humans-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "42133",
+    "Evento": "Blue Run - Pinhais - 2025",
+    "date": "2025-08-31T03:00:00.000Z",
+    "URL": "blue-run-pinhais-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "42357",
+    "Evento": "Evento Teste - São Paulo 0107 - 2025",
+    "date": "2025-07-31T03:00:00.000Z",
+    "URL": "evento-teste-s-o-paulo-0107-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "42379",
+    "Evento": "Só Quero Pedalar - São Paulo  - 2025 ",
+    "date": "2025-07-13T03:00:00.000Z",
+    "URL": "so-quero-pedalar-s-o-paulo-2-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "42428",
+    "Evento": "Treinão CIEE (Gratuito) - São Paulo - 2025 ",
+    "date": "2025-08-09T03:00:00.000Z",
+    "URL": "trein-o-ciee-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "43095",
+    "Evento": "Treinão Tecnobank ",
+    "date": "2025-08-02T03:00:00.000Z",
+    "URL": "trein-o-tecnobank",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "43221",
+    "Evento": "Night Run - Etapa 1 - Bertioga - 2025",
+    "date": "2025-10-04T03:00:00.000Z",
+    "URL": "night-run-etapa-1-bertioga-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "43270",
+    "Evento": "Treinão Skechers - São Paulo - 2025",
+    "date": "2025-07-19T03:00:00.000Z",
+    "URL": "trein-o-skechers-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "43926",
+    "Evento": "Blue Run - João Pessoa - 2025",
+    "date": "2025-10-19T03:00:00.000Z",
+    "URL": "blue-run-jo-o-pessoa-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "43946",
+    "Evento": "Bota pra Correr - Salvador - 2025",
+    "date": "2025-11-23T03:00:00.000Z",
+    "URL": "bota-pra-correr-salvador-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "43968",
+    "Evento": "Bota pra Correr - Fortaleza - 2025",
+    "date": "2025-11-09T03:00:00.000Z",
+    "URL": "bota-pra-correr-fortaleza-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "43990",
+    "Evento": "Só Quero Pedalar - Caruaru - 2025",
+    "date": "2025-10-12T03:00:00.000Z",
+    "URL": "so-quero-pedalar-caruaru-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "44160",
+    "Evento": "Corrida do Bem Eco - Mangaratiba - 2025",
+    "date": "2025-09-21T03:00:00.000Z",
+    "URL": "corrida-do-bem-eco-mangaratiba-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "43888",
+    "Evento": "Circuito das Estações 2025 - Primavera - Jacobina ",
+    "date": "2025-10-05T03:00:00.000Z",
+    "URL": "circuito-das-estacoes-2025-primavera-jacobina",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "42369",
+    "Evento": "Triathlon Internacional de Santos - 2026 ",
+    "date": "2026-03-08T03:00:00.000Z",
+    "URL": "triathlon-internacional-de-santos-2026",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "41668",
+    "Evento": "15º Meia & Maratona de Florianópolis - 42k de Floripa",
+    "date": "2026-06-07T03:00:00.000Z",
+    "URL": "15-meia-maratona-de-florianopolis-42k-de-floripa",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "44580",
+    "Evento": "Girl Power - Guarulhos 2025",
+    "date": "2025-11-09T03:00:00.000Z",
+    "URL": "girl-power-guarulhos-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "44692",
+    "Evento": "Treinão de Lançamento Powerade Sour - São Paulo - 2025",
+    "date": "2025-08-30T03:00:00.000Z",
+    "URL": "trein-o-powerade-s-o-paulo-2025",
+    "Tipo do Produto": "product"
+  },
+  {
+    "ID evento": "45177",
+    "Evento": "Smart Fit Run - 2025",
+    "date": "2025-10-26T03:00:00.000Z",
+    "URL": "smart-fit-run-2025",
+    "Tipo do Produto": "product"
+  }
+]
