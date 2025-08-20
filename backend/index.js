@@ -108,7 +108,10 @@ function processarAlertas(produto, nomeEvento) {
   if (produto.related_products) {
     produto.related_products.forEach((produtoRelacionado) => {
       // FILTRO: Ignora produtos patrocinadores pelo nome do produto relacionado
-      if (produtoRelacionado.name && produtoRelacionado.name.toLowerCase().includes("patrocinador")) {
+      if (
+        produtoRelacionado.name &&
+        produtoRelacionado.name.toLowerCase().includes("patrocinador")
+      ) {
         return; // Pula todo o produto relacionado se for patrocinador
       }
 
@@ -120,14 +123,11 @@ function processarAlertas(produto, nomeEvento) {
             return;
           if (item.title && item.title.toLowerCase().includes("distância"))
             return;
-          if (item.title && item.title.toLowerCase().includes("termo"))
-            return;
-          if (item.title && item.title.toLowerCase().includes("aceite"))
-            return;
+          if (item.title && item.title.toLowerCase().includes("termo")) return;
+          if (item.title && item.title.toLowerCase().includes("aceite")) return;
           if (item.title && item.title.toLowerCase().includes("jaqueta"))
             return;
-          if (item.title && item.title.toLowerCase().includes("boné"))
-            return;
+          if (item.title && item.title.toLowerCase().includes("boné")) return;
           if (item.title && item.title.toLowerCase().includes("moletom"))
             return;
 
@@ -213,14 +213,17 @@ function formatEventMessage(dataProduct, temAlertas = false) {
     // Informações básicas do evento
     const eventName = product.name;
     let message = `🏃‍♂️ **${eventName}** ${temAlertas ? "🚨" : ""}\n\n`;
-    
+
     // Processa produtos relacionados
     if (product.related_products && product.related_products.length > 0) {
       let kitIndex = 1;
-      
+
       product.related_products.forEach((element) => {
         // FILTRO: Ignora produtos patrocinadores pelo nome do produto relacionado
-        if (element.name && element.name.toLowerCase().includes("patrocinador")) {
+        if (
+          element.name &&
+          element.name.toLowerCase().includes("patrocinador")
+        ) {
           return; // Pula todo o produto relacionado se for patrocinador
         }
 
@@ -251,7 +254,7 @@ function formatEventMessage(dataProduct, temAlertas = false) {
             }
 
             message += `    ${item.title}\n`;
-            
+
             if (item.options && item.options.length > 0) {
               item.options.forEach((option) => {
                 const quantity = option.quantity || 0;
@@ -285,43 +288,44 @@ function gerarRelatorioAlertas() {
 
   ALERTAS.forEach((evento, index) => {
     relatorio += `${index + 1}. 🏃‍♂️ ${evento.evento}\n\n`;
-    
+
     // Agrupa alertas por kit e remove duplicatas
     const kitsAgrupados = {};
-    
+
     evento.alertas.forEach((alerta) => {
       // Extrai o nome do kit (primeira parte antes do " - ")
-      const partesNome = alerta.nome.split(' - ');
+      const partesNome = alerta.nome.split(" - ");
       const nomeKit = partesNome[0]; // Ex: "Kit Night Run"
       const tamanho = partesNome[partesNome.length - 1]; // Ex: "P", "M", "G"
-      
+
       if (!kitsAgrupados[nomeKit]) {
         kitsAgrupados[nomeKit] = new Map(); // Usar Map para evitar duplicatas
       }
-      
+
       // Usar tamanho como chave para evitar duplicatas
       kitsAgrupados[nomeKit].set(tamanho, alerta.estoque);
     });
-    
+
     // Exibe cada kit agrupado
-    Object.keys(kitsAgrupados).forEach(nomeKit => {
+    Object.keys(kitsAgrupados).forEach((nomeKit) => {
       relatorio += `    ${nomeKit}\n`;
-      
+
       // Converte Map para array e ordena por tamanho
-      const itens = Array.from(kitsAgrupados[nomeKit].entries())
-        .sort(([a], [b]) => {
+      const itens = Array.from(kitsAgrupados[nomeKit].entries()).sort(
+        ([a], [b]) => {
           // Ordem customizada de tamanhos
-          const ordem = ['PP', 'P', 'M', 'G', 'GG', 'XG', 'BL'];
+          const ordem = ["PP", "P", "M", "G", "GG", "XG", "BL"];
           return ordem.indexOf(a) - ordem.indexOf(b);
-        });
-      
+        }
+      );
+
       itens.forEach(([tamanho, estoque]) => {
         relatorio += `    camiseta ${tamanho}: ${estoque}\n`;
       });
-      
+
       relatorio += `\n`;
     });
-    
+
     relatorio += `\n`;
   });
 
@@ -457,7 +461,6 @@ async function Monitoramento() {
   }
 }
 
-cron.schedule('0 8-20/2 * * 1-5',async ()=>{
-  await Monitoramento()
-})
-
+cron.schedule("0 8-20/2 * * 1-5", async () => {
+  await Monitoramento();
+});
