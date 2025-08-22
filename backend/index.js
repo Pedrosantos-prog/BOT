@@ -37,7 +37,7 @@ const Products = gql`
                   label
                   quantity
                   product {
-                    name
+                    name  
                     sku
                   }
                 }
@@ -49,7 +49,6 @@ const Products = gql`
     }
   }
 `;
-
 async function searchData(urlKey) {
   try {
     const data = await request(endpoint, Products, { urlKey });
@@ -65,14 +64,12 @@ async function searchData(urlKey) {
     const alertas = await processarAlertas(produto);
     if (alertas) {
       ALERTAS.push(...alertas);
-    }
+    } 
     return data;
   } catch (err) {
-    console.error(`❌ Erro ao processar ${urlKey}:`, err.message);
     throw new Error(`Erro ao consultar ${urlKey}: ${err.message}`);
   }
 }
-
 async function concurrency(list, limit) {
   let index = 0;
 
@@ -94,9 +91,9 @@ async function concurrency(list, limit) {
 
   const workers = Array.from({ length: limit }, () => worker());
   await Promise.all(workers);
+  await disparaEmail(); 
   return;
 }
-
 // Versão melhorada e SIMPLES
 async function processarAlertas(produto) {
   try {
@@ -134,8 +131,9 @@ async function processarAlertas(produto) {
           if (option.quantity < LIMITE_ESTOQUE) {
             alerta.push({
               Product: element.name,
+              // nome: option.product.name,
               label: option.label,
-              quantity: option.quantity,
+              quantity: option.quantity
             });
           }
         });
@@ -147,18 +145,16 @@ async function processarAlertas(produto) {
         evento: produto.name,
         ProdutosAlertas: alerta,
       });
-    }
-
+    } 
     return alertasProduto.length > 0 ? alertasProduto : null;
   } catch (err) {
     console.error(
-      `❌ Erro ao processar alertas para ${produto.name}:`,
+      `Erro ao processar alertas para ${produto.name}:`,
       err.message
     );
     return null;
   }
 }
-
 async function relatorio(alertas) {
   try {
     if (!alertas || alertas.length === 0) {
@@ -168,19 +164,20 @@ async function relatorio(alertas) {
 
     const resultado = [];
     let message = "";
-    message += `Alerta de estoque:\n\n`;
+    message += `ALERTA DE ESTOQUE:\n`;
+    message += `Última atualização: ${new Date().toLocaleString()}\n\n`;
 
     for (let i = 0; i < alertas.length; i++) {
       const vistos = new Set();
       const produtosUnicos = [];
-      message += `Evento: ${alertas[i].evento}\n`;
+      message += `${[i]+1}. Evento: ${alertas[i].evento}\n`;
 
       for (let j = 0; j < alertas[i].ProdutosAlertas.length; j++) {
         const produto = alertas[i].ProdutosAlertas[j];
         const key = `${produto.label}-${produto.quantity}`;
 
         if (!vistos.has(key)) {
-          message += `  • Produto: ${produto.label}, Quantidade: ${produto.quantity}\n`;
+          message += `  • Produto: ${produto.label}: ${produto.quantity}\n`;
           produtosUnicos.push({
             nome: produto.label,
             quantidade: produto.quantity,
@@ -202,12 +199,12 @@ async function relatorio(alertas) {
     return ["", "Erro ao gerar relatório de alertas."];
   }
 }
-
 async function disparaEmail() {
   try {
     if (ALERTAS.length === 0) {
       console.log("Nenhum alerta para enviar por email.");
-return;}
+      return;
+    }
     const [alertasData, corpo] = await relatorio(ALERTAS);
     const assunto = "Relatório de Alertas de Estoque";
     const destinatarios = ["raissa.lima@nortemkt.com"];
@@ -217,7 +214,6 @@ return;}
     console.error("Erro ao disparar email:", err.message);
   }
 }
-
 // ==== EXECUÇÃO PRINCIPAL ====
 
 async function Monitoramento() {
@@ -229,16 +225,7 @@ async function Monitoramento() {
     console.log(`Processando ${urls.length} URLs...`);
 
     await concurrency(urls, LIMITE);
-    console.log(
-      `Processamento concluído. ${ALERTAS.length} alertas encontrados.`
-    );
-
-    if (ALERTAS.length > 0) {
-      await disparaEmail();
-    } else {
-      console.log("Nenhum alerta de estoque baixo encontrado.");
-    }
-
+    console.log(`Processamento concluído. ${ALERTAS.length} alertas encontrados.`);
     await deleteJSON(INPUT_FILE);
     console.log("Monitoramento finalizado com sucesso!");
   } catch (err) {
@@ -246,4 +233,4 @@ async function Monitoramento() {
   }
 }
 
-Monitoramento();
+await Monitoramento();
