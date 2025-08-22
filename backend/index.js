@@ -290,7 +290,7 @@ function gerarRelatorioAlertas() {
     relatorio += `${index + 1}. 🏃‍♂️ ${evento.evento}\n\n`;
 
     // Agrupa alertas por kit e remove duplicatas
-    const kitsAgrupados = {};
+    const kitsAgrupados = {}; 
 
     evento.alertas.forEach((alerta) => {
       // Extrai o nome do kit (primeira parte antes do " - ")
