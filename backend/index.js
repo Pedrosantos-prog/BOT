@@ -241,4 +241,3 @@ async function Monitoramento() {
   schedule:true,
   timezone:"America/Sao_Paulo"
  });
-
