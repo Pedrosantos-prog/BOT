@@ -17,7 +17,7 @@ jobs:
       PASSWORDEMAIL: ${{ secrets.PASSWORDEMAIL }}
       MYSQL_HOST: ${{ secrets.MYSQL_HOST }}
       MYSQL_USER: ${{ secrets.MYSQL_USER }}
-      MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+      MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWOR }}
       MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
 
     steps:
