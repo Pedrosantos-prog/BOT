@@ -2,7 +2,6 @@ import { request, gql } from "graphql-request";
 import enviarEmail from "./send.js";
 import salvarExcelAlertas from "./alertExcel.js";
 import { getURL, readURL, deleteJSON } from "./crudJson.js";
-import cron from 'node-cron'
 
 // ==== CONFIG ====
 const endpoint = "https://runningland.com.br/graphql";
@@ -106,7 +105,6 @@ async function processarAlertas(produto) {
     related_products.forEach((element) => {
       if (element.name && element.name.toLowerCase().includes("patrocinador"))
         return;
-
       if (!element.items) return; // Verificação de segurança
 
       element.items.forEach((item) => {
@@ -141,7 +139,7 @@ async function processarAlertas(produto) {
       });
     });
 
-    if (alerta.length > 0) {
+    if (alerta.length > 0 && !produto.name.toLowerCase().includes("ticket")) {
       alertasProduto.push({
         evento: produto.name,
         ProdutosAlertas: alerta,
@@ -166,6 +164,7 @@ async function relatorio(alertas) {
     const resultado = [];
     let message = "";
     message += `ALERTA DE ESTOQUE:\n`;
+    message += `Alertas encontrados: ${alertas.length} Eventos \n`;
     message += `Última atualização: ${new Date().toLocaleString()}\n\n`;
 
     for (let i = 0; i < alertas.length; i++) {
@@ -204,7 +203,7 @@ async function disparaEmail() {
     if (ALERTAS.length === 0) {
       console.log("Nenhum alerta para enviar por email.");
       return;
-    }
+    } 
     const [alertasData, corpo] = await relatorio(ALERTAS);
     const assunto = "Relatório de Alertas de Estoque";
     const destinatarios = ["alexandre.braga@nortemkt.com","cesar.vital@nortemkt.com","otavio.michelato@nortemkt.com"];
@@ -230,14 +229,17 @@ async function Monitoramento() {
     );
     await deleteJSON(INPUT_FILE);
     console.log("Monitoramento finalizado com sucesso!");
+    return;
   } catch (err) {
     console.error("Erro ao iniciar o monitoramento:", err.message);
   }
 }
 
- cron.schedule('0 8,10,12,14,16,18,20 * * 1-5',()=>{
-    Monitoramento()
- },{
-  schedule:true,
-  timezone:"America/Sao_Paulo"
- });
+//  cron.schedule('0 8,10,12,14,16,18,20 * * 1-5',()=>{
+//     Monitoramento()
+//  },{
+//   schedule:true,
+//   timezone:"America/Sao_Paulo"
+//  });
+
+Monitoramento();
