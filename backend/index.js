@@ -2,6 +2,7 @@ import { request, gql } from "graphql-request";
 import enviarEmail from "./send.js";
 import salvarExcelAlertas from "./alertExcel.js";
 import { getURL, readURL, deleteJSON } from "./crudJson.js";
+import cron from 'node-cron'
 
 // ==== CONFIG ====
 const endpoint = "https://runningland.com.br/graphql";
@@ -37,7 +38,7 @@ const Products = gql`
                   label
                   quantity
                   product {
-                    name  
+                    name
                     sku
                   }
                 }
@@ -64,7 +65,7 @@ async function searchData(urlKey) {
     const alertas = await processarAlertas(produto);
     if (alertas) {
       ALERTAS.push(...alertas);
-    } 
+    }
     return data;
   } catch (err) {
     throw new Error(`Erro ao consultar ${urlKey}: ${err.message}`);
@@ -91,7 +92,7 @@ async function concurrency(list, limit) {
 
   const workers = Array.from({ length: limit }, () => worker());
   await Promise.all(workers);
-  await disparaEmail(); 
+  await disparaEmail();
   return;
 }
 // Versão melhorada e SIMPLES
@@ -133,7 +134,7 @@ async function processarAlertas(produto) {
               Product: element.name,
               // nome: option.product.name,
               label: option.label,
-              quantity: option.quantity
+              quantity: option.quantity,
             });
           }
         });
@@ -145,7 +146,7 @@ async function processarAlertas(produto) {
         evento: produto.name,
         ProdutosAlertas: alerta,
       });
-    } 
+    }
     return alertasProduto.length > 0 ? alertasProduto : null;
   } catch (err) {
     console.error(
@@ -161,7 +162,7 @@ async function relatorio(alertas) {
       console.log("Nenhum alerta de estoque baixo encontrado.");
       return ["", "Nenhum alerta de estoque baixo encontrado."];
     }
-
+    let index = 1;
     const resultado = [];
     let message = "";
     message += `ALERTA DE ESTOQUE:\n`;
@@ -170,8 +171,7 @@ async function relatorio(alertas) {
     for (let i = 0; i < alertas.length; i++) {
       const vistos = new Set();
       const produtosUnicos = [];
-      message += `${[i]+1}. Evento: ${alertas[i].evento}\n`;
-
+      message += `${index++}. Evento: ${alertas[i].evento}\n`;
       for (let j = 0; j < alertas[i].ProdutosAlertas.length; j++) {
         const produto = alertas[i].ProdutosAlertas[j];
         const key = `${produto.label}-${produto.quantity}`;
@@ -207,7 +207,7 @@ async function disparaEmail() {
     }
     const [alertasData, corpo] = await relatorio(ALERTAS);
     const assunto = "Relatório de Alertas de Estoque";
-    const destinatarios = ["raissa.lima@nortemkt.com"];
+    const destinatarios = ["alexandre.braga@nortemkt.com","cesar.vital@nortemkt.com","otavio.michelato@nortemkt.com"];
     await enviarEmail(destinatarios, assunto, corpo);
     console.log("Email de alertas enviado com sucesso!");
   } catch (err) {
@@ -225,7 +225,9 @@ async function Monitoramento() {
     console.log(`Processando ${urls.length} URLs...`);
 
     await concurrency(urls, LIMITE);
-    console.log(`Processamento concluído. ${ALERTAS.length} alertas encontrados.`);
+    console.log(
+      `Processamento concluído. ${ALERTAS.length} alertas encontrados.`
+    );
     await deleteJSON(INPUT_FILE);
     console.log("Monitoramento finalizado com sucesso!");
   } catch (err) {
@@ -233,4 +235,10 @@ async function Monitoramento() {
   }
 }
 
-await Monitoramento();
+ cron.schedule('0 8,10,12,14,16,18,20 * * 1-5',()=>{
+    Monitoramento()
+ },{
+  schedule:true,
+  timezone:"America/Sao_Paulo"
+ });
+
