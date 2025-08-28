@@ -13,23 +13,13 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-async function enviarEmail(destinatario,assunto,corpo,nomeArquivo, alertas) {
+async function enviarEmail(destinatario,assunto,corpo) {
     try{
-
-        await salvarExcelAlertas(nomeArquivo,alertas)
-
          const info = await transporter.sendMail({
             from: '"Pedro - Norte MKT" <pedro.santos@nortemkt.com>', // Melhor identificação
             to: destinatario,
             subject: assunto,
-            text: corpo,
-            attachments: [
-                {
-                    filename: nomeArquivo,      // Nome do arquivo no e-mail
-                    path: `./${nomeArquivo}`,   // Caminho do arquivo no servidor
-                    contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-                }
-            ]
+            text: corpo
         });
         return info;    
     }catch(err){

@@ -37,7 +37,7 @@ Sistema automatizado desenvolvido em Node.js que:
 ### ⏰ **Execução Programada**
 - Execução automática a cada 2 horas durante horário comercial
 - Funcionamento apenas em dias úteis (segunda a sexta)
-- Uso do cron para agendamento confiável
+- Github Actions para fazer o executar o código
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -46,7 +46,6 @@ Sistema automatizado desenvolvido em Node.js que:
 - **GraphQL Request** - Consultas à API GraphQL
 - **Nodemailer** - Envio de emails
 - **XLSX** - Geração de planilhas Excel
-- **Node-Cron** - Agendamento de tarefas
 - **Dotenv** - Gerenciamento de variáveis de ambiente
 
 ## 📁 Estrutura do Projeto
@@ -74,15 +73,13 @@ backend/
 
 ### 📈 **Filtros Implementados**
 - **Produtos Patrocinadores**: Excluídos automaticamente
-- **Acessórios Específicos**: Bateria, distância, termo, aceite, jaqueta, boné, moletom
-- **Produtos Bundle**: Análise específica para kits complexos
+- **Acessórios Específicos retirados da análise**: Bateria, distância, termo, aceite, jaqueta, boné, moletom
 - **Status de Estoque**: Verificação de disponibilidade
 
 ### 📊 **Relatórios Gerados**
 - **Resumo Executivo**: Total de eventos monitorados e alertas
 - **Detalhamento por Evento**: Lista de produtos com estoque baixo
 - **Planilha Excel**: Dados estruturados para análise
-- **Logs JSON**: Histórico completo para auditoria
 
 ## ⚙️ Configuração
 
@@ -106,7 +103,7 @@ const endpoint = "https://runningland.com.br/graphql";
 ## 📈 Resultados
 
 ### ✅ **Benefícios Alcançados**
-- **Redução de 90%** no tempo de identificação de problemas de estoque
+- **identificação** de problemas de estoque
 - **Automatização completa** do processo de monitoramento
 - **Alertas proativos** antes da ruptura de estoque
 - **Relatórios padronizados** para tomada de decisão
@@ -114,9 +111,8 @@ const endpoint = "https://runningland.com.br/graphql";
 
 ### 📊 **Métricas de Performance**
 - **Processamento concorrente** com limite configurável
-- **Filtragem inteligente** reduz ruído em 80%
 - **Execução programada** garante monitoramento contínuo
-- **Relatórios em tempo real** com dados atualizados
+- **Relatórios a cada 2H** com dados atualizados
 
 ### 🎯 **Impacto no Negócio**
 - **Prevenção de rupturas** de estoque em eventos críticos
@@ -141,35 +137,13 @@ cp .env.example .env
 ```bash
 node backend/index.js
 ```
-
-4. **Execução automática**: O sistema roda automaticamente via cron job configurado no código.
+4. **Execução automática**: O sistema roda automaticamente via GitHub Actions configurado no código.
 
 ## 📧 Destinatários dos Alertas
 
-Configuração atual para recebimento de alertas:
-- alexandre.braga@nortemkt.com
-- otavio.michelato@nortemkt.com
-- cesar.vital@nortemkt.com
-- julia.correa@nortemkt.com(EMAIL TESTE)
-
 Para adicionar novos destinatários, edite o array `destinatarios` no arquivo `index.js`.
-
-## 📝 Logs e Monitoramento
-
-O sistema gera os seguintes arquivos de log:
-- `messages.json` - Log completo de todas as execuções
-- `alertas_estoque.json` - Histórico específico de alertas
-- `alerta_estoque.xlsx` - Planilha com dados dos alertas
-
-## 🔮 Próximos Passos
-
-- [ ] Dashboard web para visualização em tempo real
-- [ ] Integração com Slack/Teams para alertas instantâneos
-- [ ] Análise preditiva de tendências de estoque
-- [ ] API REST para integração com outros sistemas
-- [ ] Configuração via interface web
 
 ---
 
-**Desenvolvido por**: Pedro Santos - Norte MKT  
-**Última atualização**: Janeiro 2025
+**Desenvolvido por**: Pedro Otavio Santos Da Silva - Norte MKT  
+**Última atualização**: Agosto 2025
