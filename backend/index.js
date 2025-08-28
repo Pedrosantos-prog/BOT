@@ -125,8 +125,8 @@ async function processarAlertas(produto) {
         if (item.title && item.title.toLowerCase().includes("viseira")) return;
 
         if (!item.options) return; // Verificação de segurança
-
         item.options.forEach((option) => {
+          if(option.label == null || typeof option.label !== "string" ) return;
           if (option.quantity < LIMITE_ESTOQUE) {
             alerta.push({
               Product: element.name,
@@ -174,7 +174,7 @@ async function relatorio(alertas) {
       for (let j = 0; j < alertas[i].ProdutosAlertas.length; j++) {
         const produto = alertas[i].ProdutosAlertas[j];
         const key = `${produto.label}-${produto.quantity}`;
-        
+
         if (!vistos.has(key)) {
           message += `  • Produto: ${produto.label}: ${produto.quantity}\n`;
           produtosUnicos.push({
@@ -206,7 +206,7 @@ async function disparaEmail() {
     } 
     const [alertasData, corpo] = await relatorio(ALERTAS);
     const assunto = "Relatório de Alertas de Estoque";
-    const destinatarios = ["alexandre.braga@nortemkt.com","cesar.vital@nortemkt.com","otavio.michelato@nortemkt.com"];
+    const destinatarios = ["raissa.lima@nortemkt.com"];
     await enviarEmail(destinatarios, assunto, corpo);
     console.log("Email de alertas enviado com sucesso!");
   } catch (err) {
@@ -234,12 +234,4 @@ async function Monitoramento() {
     console.error("Erro ao iniciar o monitoramento:", err.message);
   }
 }
-
-//  cron.schedule('0 8,10,12,14,16,18,20 * * 1-5',()=>{
-//     Monitoramento()
-//  },{
-//   schedule:true,
-//   timezone:"America/Sao_Paulo"
-//  });
-
 Monitoramento();
