@@ -127,6 +127,7 @@ async function processarAlertas(produto) {
         if (!item.options) return; // Verificação de segurança
 
         item.options.forEach((option) => {
+          if(option.label == null || typeof option.label !== "string" ) return;
           if (option.quantity < LIMITE_ESTOQUE) {
             alerta.push({
               Product: element.name,
