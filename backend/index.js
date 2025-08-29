@@ -102,31 +102,33 @@ async function processarAlertas(produto) {
 
     const { related_products } = produto;
 
+    const termosExclusao = [
+      "patrocinador",
+      "termo",
+      "distância",
+      "bateria",
+      "moletom",
+      "mochila",
+      "boné",
+      "jaqueta",
+      "aceite",
+      "personalizaçãodecamiseta",
+      "viseira",
+    ];
+
     related_products.forEach((element) => {
-      if (element.name && element.name.toLowerCase().includes("patrocinador"))
+      if (
+        termosExclusao.some(
+          (termo) => element.name && element.name.toLowerCase().includes(termo)
+        )
+      )
         return;
       if (!element.items) return; // Verificação de segurança
-
       element.items.forEach((item) => {
-        if (item.title && item.title.toLowerCase().includes("termo")) return;
-        if (item.title && item.title.toLowerCase().includes("distância"))
-          return;
-        if (item.title && item.title.toLowerCase().includes("bateria")) return;
-        if (item.title && item.title.toLowerCase().includes("moletom")) return;
-        if (item.title && item.title.toLowerCase().includes("mochila")) return;
-        if (item.title && item.title.toLowerCase().includes("boné")) return;
-        if (item.title && item.title.toLowerCase().includes("jaqueta")) return;
-        if (item.title && item.title.toLowerCase().includes("aceite")) return;
-        if (
-          item.title &&
-          item.title.toLowerCase().trim().includes("personalizaçãodecamiseta")
-        )
-          return;
-        if (item.title && item.title.toLowerCase().includes("viseira")) return;
-
+        if (termosExclusao.some((termo) => item.title && item.title.toLowerCase().includes(termo))) return;
         if (!item.options) return; // Verificação de segurança
         item.options.forEach((option) => {
-          if(option.label == null || typeof option.label !== "string" ) return;
+          if (option.label == null || typeof option.label !== "string") return;
           if (option.quantity < LIMITE_ESTOQUE) {
             alerta.push({
               Product: element.name,
@@ -203,7 +205,7 @@ async function disparaEmail() {
     if (ALERTAS.length === 0) {
       console.log("Nenhum alerta para enviar por email.");
       return;
-    } 
+    }
     const [alertasData, corpo] = await relatorio(ALERTAS);
     const assunto = "Relatório de Alertas de Estoque";
     const destinatarios = ["raissa.lima@nortemkt.com"];
