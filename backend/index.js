@@ -222,7 +222,12 @@ async function disparaEmail() {
     }
     const [alertasData, corpo] = await relatorio(ALERTAS);
     const assunto = "Relatório de Alertas de Estoque";
-    const destinatarios = ["raissa.lima@nortemkt.com"];
+    const destinatarios = [
+      "alexandre.braga@nortemkt.com",
+      "cesar.vital@nortemkt.com",
+      "otavio.michelato@nortemkt.com",
+      "leticia.lima@nortemkt.com"
+    ];
     await enviarEmail(destinatarios, assunto, corpo);
     console.log("Email de alertas enviado com sucesso!");
   } catch (err) {
@@ -251,3 +256,4 @@ async function Monitoramento() {
   }
 }
 Monitoramento();
+
