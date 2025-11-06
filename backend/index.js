@@ -126,15 +126,29 @@ async function processarAlertas(produto) {
       if (!element.items) return; // Verificação de segurança
       element.items.forEach((item) => {
         if (termosExclusao.some((termo) => item.title && item.title.toLowerCase().includes(termo))) return;
-        if (!item.options) return; // Verificação de segurança
+        if (!item.options || !Array.isArray(item.options)) return; // Verificação de segurança
+
+        const quantidadePorLabel = new Map();
+
         item.options.forEach((option) => {
           if (option.label == null || typeof option.label !== "string") return;
-          if (option.quantity < LIMITE_ESTOQUE) {
+          if (typeof option.quantity !== "number") return;
+
+          const label = option.label;
+          const quantity = option.quantity;
+
+          if(!quantidadePorLabel.has(label) || quantidadePorLabel.get(label) < quantity){
+          quantidadePorLabel.set(label, quantity)
+          }
+        });
+
+        quantidadePorLabel.forEach((quantity, label) => {
+          if (quantity < LIMITE_ESTOQUE) {
             alerta.push({
               Product: element.name,
               // nome: option.product.name,
-              label: option.label,
-              quantity: option.quantity,
+              label: label,
+              quantity: quantity,
             });
           }
         });
