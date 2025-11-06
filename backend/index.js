@@ -213,6 +213,7 @@ async function disparaEmail() {
       "alexandre.braga@nortemkt.com",
       "cesar.vital@nortemkt.com",
       "otavio.michelato@nortemkt.com",
+      "leticia.lima@nortemkt.com"
     ];
     await enviarEmail(destinatarios, assunto, corpo);
     console.log("Email de alertas enviado com sucesso!");
@@ -250,3 +251,4 @@ async function Monitoramento() {
 //  });
 
 Monitoramento();
+
